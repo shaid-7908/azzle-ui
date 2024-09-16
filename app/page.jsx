@@ -26,15 +26,7 @@ function Home() {
 
   return (
     <div className="page-wrapper relative z-[1] bg-white">
-      {movies.map((e, index) => {
-        return (
-          <div key={index}>
-            {e.movie_name}
-            <img src={e.image} alt={"na"} width={500} height={500} />
-            {e.rating}
-          </div>
-        );
-      })}
+      
       {/*...::: Header Start :::... */}
       <Header_01 />
       {/*...::: Header End :::... */}
