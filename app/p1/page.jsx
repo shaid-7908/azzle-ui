@@ -159,7 +159,7 @@ function Product1() {
                   </div>
                   <div className="flex-1">
                     <Image
-                      src="https://framerusercontent.com/images/C8m4PfsS3ajGq554AkEXBXfzYZE.gif"
+                      src="/assets/img_1.gif"
                       alt="na"
                       height={600}
                       width={600}
@@ -187,7 +187,7 @@ function Product1() {
                   </div>
                   <div className="flex-1">
                     <Image
-                      src="https://framerusercontent.com/images/WeF78UARbO5VD4LQOz9cbsnaQUQ.gif"
+                      src="/assets/img_3.gif"
                       alt="na"
                       height={600}
                       width={600}
