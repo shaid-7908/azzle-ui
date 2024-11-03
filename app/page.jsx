@@ -26,7 +26,6 @@ function Home() {
 
   return (
     <div className="page-wrapper relative z-[1] bg-white">
-      
       {/*...::: Header Start :::... */}
       <Header_01 />
       {/*...::: Header End :::... */}
@@ -75,126 +74,7 @@ function Home() {
                 />
               </div>
 
-              <div className="my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20"></div>
-              <div className="jos mx-auto mb-12 max-w-[715px] text-center lg:mb-16">
-                <p className="text-lg">
-                  Companies of all sizes trust us to find AI SaaS critical to
-                  their growth and innovation
-                </p>
-              </div>
-              <div className="jos brand-slider" data-jos_animation="fade">
-                <Swiper
-                  slidesPerView={2}
-                  spaceBetween={105}
-                  autoplay={{
-                    delay: 4000,
-                    disableOnInteraction: false,
-                  }}
-                  modules={[Autoplay]}
-                  breakpoints={{
-                    768: {
-                      slidesPerView: 3,
-                    },
-                    992: {
-                      slidesPerView: 4,
-                    },
-                    1200: {
-                      slidesPerView: 5,
-                    },
-                  }}
-                >
-                  <SwiperSlide>
-                    <Image
-                      src="/assets/img_placeholder/th-1/brand-1.png"
-                      alt="brand-1"
-                      width="180"
-                      height="38"
-                      className="max-w-full"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/assets/img_placeholder/th-1/brand-2.png"
-                      alt="brand-2"
-                      width="183"
-                      height="35"
-                      className="max-w-full"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/assets/img_placeholder/th-1/brand-3.png"
-                      alt="brand-3"
-                      width="172"
-                      height="35"
-                      className="max-w-full"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/assets/img_placeholder/th-1/brand-4.png"
-                      alt="brand-4"
-                      width="175"
-                      height="30"
-                      className="max-w-full"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/assets/img_placeholder/th-1/brand-5.png"
-                      alt="brand-5"
-                      width="168"
-                      height="36"
-                      className="max-w-full"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/assets/img_placeholder/th-1/brand-1.png"
-                      alt="brand-1"
-                      width="180"
-                      height="38"
-                      className="max-w-full"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/assets/img_placeholder/th-1/brand-2.png"
-                      alt="brand-2"
-                      width="183"
-                      height="35"
-                      className="max-w-full"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/assets/img_placeholder/th-1/brand-3.png"
-                      alt="brand-3"
-                      width="172"
-                      height="35"
-                      className="max-w-full"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/assets/img_placeholder/th-1/brand-4.png"
-                      alt="brand-4"
-                      width="175"
-                      height="30"
-                      className="max-w-full"
-                    />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                    <Image
-                      src="/assets/img_placeholder/th-1/brand-5.png"
-                      alt="brand-5"
-                      width="168"
-                      height="36"
-                      className="max-w-full"
-                    />
-                  </SwiperSlide>
-                </Swiper>
-              </div>
+              {/* <div className="my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20"></div> */}
             </div>
             <div className="orange-gradient-1 absolute -right-[150px] top-[370px] -z-[1] h-[500px] w-[500px] animate-spin rounded-[500px]"></div>
 
@@ -433,62 +313,7 @@ function Home() {
         {/*...::: Service Section End :::... */}
 
         {/*...::: Content Section Start_1 :::... */}
-        <section id="content-section-1">
-          {/* Section Spacer */}
-          <div className="pb-20 xl:pb-[150px]">
-            {/* Section Container */}
-            <div className="global-container">
-              <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32">
-                {/* Content Left Block */}
-                <div
-                  className="jos order-2 overflow-hidden rounded-md md:order-1 border-[1px] border-[#FE330A]"
-                  data-jos_animation="fade-left"
-                >
-                  <Image
-                    src="/automation.png"
-                    alt="content-image-1"
-                    width="526"
-                    height="450"
-                    className="h-auto w-full"
-                  />
-                </div>
-                {/* Content Left Block */}
-                {/* Content Right Block */}
-                <div
-                  className="jos order-1 md:order-2"
-                  data-jos_animation="fade-right"
-                >
-                  {/* Section Content Block */}
-                  <div className="mb-6">
-                    <h2>Workflow automation</h2>
-                  </div>
-                  {/* Section Content Block */}
-                  <div className="text-lg leading-[1.4] lg:text-[21px]">
-                    <p className="mb-7 last:mb-0">
-                      Connect different tools across the business and automate
-                      processes with a data intelligence layer ,ensuring
-                      seamless data flow, improved efficiency, and real-time
-                      insights. By integrating various systems, businesses can
-                      eliminate manual tasks, reduce errors, and make
-                      data-driven decisions.
-                    </p>
-                    <p className="mb-7 last:mb-0">
-                      This automation not only enhances productivity but also
-                      enables businesses to scale operations, optimize
-                      resources, and respond faster to changing market
-                      conditions. With a focus on flexibility, the system can
-                      adapt to specific business needs, making it easier to
-                      customize and extend as the business grows.
-                    </p>
-                  </div>
-                </div>
-                {/* Content Right Block */}
-              </div>
-            </div>
-            {/* Section Container */}
-          </div>
-          {/* Section Spacer */}
-        </section>
+
         {/*...::: Content Section End_1 :::... */}
 
         {/*...::: Content Section Start_2 :::... */}
@@ -983,7 +808,7 @@ function Home() {
                       onClick={() => handleAccordion(0)}
                     >
                       <div className="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
-                        <p>How do I start AI SaaS?</p>
+                        <p>What is intelligent automation?</p>
                         <div className="accordion-icon">
                           <Image
                             src="/assets/img_placeholder/plus.svg"
@@ -995,9 +820,10 @@ function Home() {
                       </div>
                       <div className="accordion-content text-[#2C2C2C]">
                         <p>
-                          Go to the our official website and require users to
-                          create an account. You ll need to provide some basic
-                          information and agree to our terms and conditions.
+                          Intelligent automation combines advanced technologies,
+                          such as AI and machine learning, with automation to
+                          streamline processes, enhance decision-making, and
+                          improve overall efficiency within organizations.
                         </p>
                       </div>
                     </li>
@@ -1010,7 +836,7 @@ function Home() {
                       onClick={() => handleAccordion(1)}
                     >
                       <div className="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
-                        <p>Can I customize AI SaaS solutions?</p>
+                        <p>How can your solution help improve collaboration?</p>
                         <div className="accordion-icon">
                           <Image
                             src="/assets/img_placeholder/plus.svg"
@@ -1022,9 +848,10 @@ function Home() {
                       </div>
                       <div className="accordion-content text-[#2C2C2C]">
                         <p>
-                          Go to the our official website and require users to
-                          create an account. You ll need to provide some basic
-                          information and agree to our terms and conditions.
+                          Our solution enhances collaboration by providing
+                          AI-driven insights that keep teams aligned and focused
+                          on common goals, facilitating real-time communication
+                          and information sharing.
                         </p>
                       </div>
                     </li>
@@ -1037,7 +864,10 @@ function Home() {
                       onClick={() => handleAccordion(2)}
                     >
                       <div className="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
-                        <p>How can AI benefit my business?</p>
+                        <p>
+                          Can I integrate your analytics solution with existing
+                          systems?
+                        </p>
                         <div className="accordion-icon">
                           <Image
                             src="/assets/img_placeholder/plus.svg"
@@ -1049,9 +879,10 @@ function Home() {
                       </div>
                       <div className="accordion-content text-[#2C2C2C]">
                         <p>
-                          Go to the our official website and require users to
-                          create an account. Youll need to provide some basic
-                          information and agree to our terms and conditions.
+                          Yes, our solution is designed to seamlessly integrate
+                          with your existing tools and systems, enabling
+                          intelligent automation and ensuring a smooth workflow
+                          across your organization.
                         </p>
                       </div>
                     </li>
