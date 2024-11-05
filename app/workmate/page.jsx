@@ -57,7 +57,7 @@ function Workmate() {
               >
                 <video
                   ref={videoRef}
-                  src="https://res.cloudinary.com/dycvkezau/video/upload/v1728802091/WhatsApp_Video_2024-10-13_at_12.15.51_2219e755_olhcml.mp4"
+                  src="https://res.cloudinary.com/dycvkezau/video/upload/v1730812625/Workmate_AI_1_hu0kll.mp4"
                   autoPlay
                   loop
                   muted

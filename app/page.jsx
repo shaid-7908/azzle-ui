@@ -447,7 +447,7 @@ function Home() {
                 <div className="jos order-1" data-jos_animation="fade-right">
                   {/* Section Content Block */}
                   <div className="mb-6">
-                    <h2 className="text-7xl">
+                    <h2 className="text-6xl">
                       Integrate tools across systems to drive intelligent
                       automation.
                     </h2>
