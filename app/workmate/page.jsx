@@ -1,19 +1,19 @@
-'use client'
-import Header_01 from '@/components/header/Header_01'
-import Link from 'next/link'
-import React,{useRef} from 'react'
-import Image from 'next/image'
-import useAccordion from '@/components/hooks/useAccordion'
-import Footer_01 from '@/components/footer/Footer_01'
+"use client";
+import Header_01 from "@/components/header/Header_01";
+import Link from "next/link";
+import React, { useRef } from "react";
+import Image from "next/image";
+import useAccordion from "@/components/hooks/useAccordion";
+import Footer_01 from "@/components/footer/Footer_01";
 
 function Workmate() {
-    const videoRef = useRef(null);
-   const [activeIndex, handleAccordion] = useAccordion(0);
-    const handleLoadedMetadata = () => {
-      if (videoRef.current) {
-        videoRef.current.playbackRate = 2.5; // Increase speed to 1.5x
-      }
-    };
+  const videoRef = useRef(null);
+  const [activeIndex, handleAccordion] = useAccordion(0);
+  const handleLoadedMetadata = () => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 2.5; // Increase speed to 1.5x
+    }
+  };
   return (
     <>
       <Header_01 />
@@ -67,13 +67,42 @@ function Workmate() {
           </div>
         </section>
 
-        <section>
+        <section id="workmate-offering-section">
           <div className="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px]  pb-20  lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24  xxl:pb-[133px] ">
             <div className="global-container ">
               <div className="pb-20">
                 <h2 className="text-center">Workmate Solutions Offerings</h2>
               </div>
               <div>
+                <div className=" mt-9 mb-20 grid grid-cols-1 md:grid-cols-3 gap-4 ">
+                  <div className="   unique-shadow">
+                    <div className="bg-colorOrangyRed text-white  text-3xl font-bold text-center p-5 my-8">
+                      Public LLM
+                    </div>
+                    <div className="p-6 text-center text-xl">
+                      Utilizes third-party LLM APIs, such as GPT-4 or Claude,
+                      for language processing needs.
+                    </div>
+                  </div>
+                  <div className="unique-shadow ">
+                    <div className="bg-colorOrangyRed text-white  text-3xl font-bold text-center p-5 my-8">
+                      Private LLM
+                    </div>
+                    <div className="p-6 text-center text-xl">
+                      Deploys open-source LLMs within a secure environment,
+                      hosted exclusively on our infrastructure.
+                    </div>
+                  </div>
+                  <div className="  unique-shadow ">
+                    <div className="bg-colorOrangyRed text-white bg-opacity-100 text-3xl font-bold text-center p-5 my-8">
+                      Fine tuned SLM
+                    </div>
+                    <div className="p-6 text-center text-xl">
+                      A custom-trained model, tailored to specific data, hosted
+                      on-premises for secure and dedicated use.
+                    </div>
+                  </div>
+                </div>
                 {/*..::Diagram 1 ::..*/}
                 <div className="flex flex-col-reverse md:flex-row mb-[80px]">
                   <div className="flex-1 flex justify-center items-start p-4">
@@ -260,6 +289,181 @@ function Workmate() {
             </div>
           </div>
         </section>
+        {/*....:: Pricing Section Start ::..... */}
+        <section id="road-map-section">
+          <div className="bg-white py-10">
+            <div className="container mx-auto">
+              <div className="text-center mb-8">
+                <h2 className=" font-bold text-colorOrangyRed">
+                  Onboarding Roadmap
+                </h2>
+                <p className="text-gray-500 mt-4">The roadmap shows 5 steps</p>
+              </div>
+
+              <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-4">
+                <div className="flex flex-col items-center text-center">
+                  <div className="flex items-center justify-center bg-[#00b48d] text-white font-bold w-10 h-10 rounded-full mb-4">
+                    1
+                  </div>
+                  <div className="bg-colorOrangyRed text-white p-4 rounded-md w-64">
+                    <h3 className="text-lg font-semibold mb-2 tracking-wide">
+                      Connect with Data
+                    </h3>
+                    <p className="text-sm">
+                      Connect a daily snapshot of client data replica into
+                      dedicated workmate stack.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center text-center">
+                  <div className="flex items-center justify-center bg-[#00b48d] text-white font-bold w-10 h-10 rounded-full mb-4">
+                    2
+                  </div>
+                  <div className="bg-colorOrangyRed text-white p-4 rounded-md w-64">
+                    <h3 className="text-lg font-semibold mb-2 tracking-wide">
+                      Analyzing UseCases
+                    </h3>
+                    <p className="text-sm">
+                      We thoroughly analyze client use cases and develop tools
+                      and data models.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center text-center">
+                  <div className="flex items-center justify-center bg-[#00b48d] text-white font-bold w-10 h-10 rounded-full mb-4">
+                    3
+                  </div>
+                  <div className="bg-colorOrangyRed text-white p-4 rounded-md w-64">
+                    <h3 className="text-lg font-semibold mb-2 tracking-wide">
+                      Prompts Update
+                    </h3>
+                    <p className="text-sm">
+                      We update prompts and examples to align with client use
+                      cases.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center text-center">
+                  <div className="flex items-center justify-center bg-[#00b48d] text-white font-bold w-10 h-10 rounded-full mb-4">
+                    4
+                  </div>
+                  <div className="bg-colorOrangyRed text-white p-4 rounded-md w-64">
+                    <h3 className="text-lg font-semibold mb-2 tracking-wide">
+                      Stack Deployment
+                    </h3>
+                    <p className="text-sm">
+                      Deploy all workmate resources into the dedicated account &
+                      do testing.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col items-center text-center">
+                  <div className="flex items-center justify-center bg-[#00b48d] text-white font-bold w-10 h-10 rounded-full mb-4">
+                    5
+                  </div>
+                  <div className="bg-colorOrangyRed text-white p-4 rounded-md w-64">
+                    <h3 className="text-lg font-semibold mb-2 tracking-wide">
+                      Ready for Use
+                    </h3>
+                    <p className="text-sm">
+                      Client will be provided with a secure URL to interact with
+                      workmate system.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="hidden md:flex justify-between items-center mt-8 w-full max-w-4xl mx-auto">
+                <div className="h-2 w-full bg-gray-200 rounded-full"></div>
+                <div className="absolute inset-x-0 flex justify-between items-center w-full max-w-4xl mx-auto">
+                  <div className="h-4 w-4 bg-[#00b48d] rounded-full"></div>
+                  <div className="h-4 w-4 bg-[#00b48d] rounded-full"></div>
+                  <div className="h-4 w-4 bg-[#00b48d] rounded-full"></div>
+                  <div className="h-4 w-4 bg-[#00b48d] rounded-full"></div>
+                  <div className="h-4 w-4 bg-[#00b48d] rounded-full"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/*....:: Pricing Section End ::........ */}
+
+        <section id="pricing-section" className="mt-10">
+          <div className="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px]  pb-20  lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24  xxl:pb-[133px] ">
+            <div className="global-container">
+              <div className="w-[100%] py-10 ">
+                <div className="flex flex-col md:flex-row justify-between w-[100%]">
+                  {/* Title Section */}
+                  <div className="text-center flex-1 flex flex-col md:text-left mb-8">
+                    <h2 className=" font-bold text-colorOrangyRed inline-block relative">
+                      <span className=" px-2 py-1 rounded-md">
+                        Pricing Model
+                      </span>
+                    </h2>
+                    <p className="mt-4 px-2 py-1 text-gray-600 text-lg">
+                      We offer a highly adaptable pricing model that caters
+                      seamlessly to businesses of all sizes, ensuring a perfect
+                      fit regardless of the company&apos;s scale or nature.
+                    </p>
+                    <div className="text-center bg-gradient-to-br from-white to-colorLinenRuffle flex justify-center">
+                      <Image
+                        alt="pricing"
+                        src="/assets/jk.png"
+                        width={200}
+                        height={200}
+                      />
+                    </div>
+                  </div>
+
+                  {/* Pricing Steps */}
+                  <div className="flex flex-1 flex-col items-center  space-y-8 ">
+                    {/* Step 1 */}
+                    <div className="flex items-start ">
+                      <div className="flex-shrink-0 bg-[#00b48d] text-white font-bold w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                        01
+                      </div>
+                      <div className="bg-white shadow-md p-4 rounded-md border-l-4 border-[#00b48d] w-64">
+                        <h3 className="text-colorOrangyRed font-semibold text-lg tracking-wide">
+                          Onboarding Fees
+                        </h3>
+                        <p className="text-gray-500 text-sm mt-2">
+                          A single payment is necessary for the implementation
+                          of client use cases and the establishment of dedicated
+                          infrastructure.
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Step 2 */}
+                    <div className="flex items-start">
+                      <div className="flex-shrink-0 bg-[#00b48d] text-white font-bold w-10 h-10 rounded-full flex items-center justify-center mr-4">
+                        02
+                      </div>
+                      <div className="bg-colorOrangyRed text-white shadow-md p-4 rounded-md w-64">
+                        <h3 className="font-semibold text-lg tracking-wide">
+                          Subscription Fees
+                        </h3>
+                        <p className="text-sm mt-2">
+                          This model operates on a pay-as-you-go basis for the
+                          licensing fee, determined by the extent of data usage.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Placeholder for SVG Image */}
+                  {/* <div className="mt-10 bg-blue-100 h-64 rounded-md flex items-center justify-center">
+                <p className="text-blue-500">SVG Image Placeholder</p>
+              </div> */}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/*...::: FAQ Section Start :::... */}
         <section className="faq-section mt-[60px]">
@@ -408,4 +612,4 @@ function Workmate() {
   );
 }
 
-export default Workmate
+export default Workmate;

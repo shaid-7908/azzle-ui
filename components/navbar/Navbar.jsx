@@ -103,11 +103,11 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
               </li>
             </ul> */}
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link href="/workmateteams" className="nav-link-item">
               About
             </Link>
-          </li>
+          </li> */}
           <li
             onClick={(e) => handleSubMenu(e, 2)}
             className="nav-item nav-item-has-children"
@@ -127,10 +127,10 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
               id="submenu-2"
             >
               <li className="sub-menu--item">
-                <Link href="/services">Healthcare</Link>
+                <Link href="/p1">Healthcare</Link>
               </li>
               <li className="sub-menu--item">
-                <Link href="/service-details">Finance</Link>
+                <Link href="/finance">Finance</Link>
               </li>
             </ul>
           </li>

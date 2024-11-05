@@ -477,7 +477,7 @@ function Home() {
             {/* Section Container */}
             <div className="global-container">
               <div id="main-div-for-wsc" className="pr-4 pl-4 my-[60px]">
-                <div className="flex">
+                <div className="flex flex-col md:flex-row">
                   <div className="flex-[60%]">
                     <div className="relative">
                       <motion.h2
@@ -494,7 +494,7 @@ function Home() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
-                        className="absolute bg-[#0077b6] h-[80px] z-10 top-0 text-[#0077b6] w-[250px] p-2"
+                        className="absolute bg-[#0077b6] h-[40px] md:h-[80px] z-10 top-0 text-[#0077b6] w-[100px] md:w-[250px] p-2"
                       ></motion.div>
                     </div>
                     <div className="my-[20px]">
@@ -503,7 +503,7 @@ function Home() {
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.8 }}
                         viewport={{ once: true }}
-                        className="text-2xl w-[80%] font-outfit"
+                        className=" md:text-2xl w-[80%] font-outfit"
                       >
                         We deliver secure, privacy-first generative AI solutions
                         that enhance data insights with dynamic visualization
@@ -512,7 +512,7 @@ function Home() {
                       </motion.p>
                     </div>
                     <hr className="w-[80%]" />
-                    <div className="grid grid-cols-3 gap-4 w-[80%]">
+                    <div className="grid grid-col-1 md:grid-cols-3 gap-4 w-[100%] md:w-[80%]">
                       <div>
                         <div className="relative p-4">
                           <motion.h3
