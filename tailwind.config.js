@@ -35,8 +35,8 @@ module.exports = {
 
       colors: {
         colorCodGray: "#191919",
-        colorOrangyRed: "#FE330A",
-        colorLinenRuffle: "#EFEAE3",
+        colorOrangyRed: "#03045e",
+        colorLinenRuffle: "#caf0f8",
         colorViolet: "#321CA4",
         colorGreen: "#39FF14",
       },

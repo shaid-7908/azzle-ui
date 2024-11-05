@@ -82,17 +82,11 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
             onClick={(e) => handleSubMenu(e, 1)}
             className="nav-item nav-item-has-children"
           >
-            <Link href="#" className="nav-link-item drop-trigger">
-              Demo
-              <Image
-                className="dropdown-icon"
-                src="/assets/img_placeholder/icon-black-cheveron-right.svg"
-                alt="cheveron-right"
-                width={16}
-                height={16}
-              />
+            <Link href="/" className="nav-link-item ">
+              Home
+             
             </Link>
-            <ul
+            {/* <ul
               className={`sub-menu ${mobileSubMenu === 1 && "active"}`}
               id="submenu-1"
             >
@@ -108,14 +102,14 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
               <li className="sub-menu--item">
                 <Link href="/home-4"> home 04</Link>
               </li>
-            </ul>
+            </ul> */}
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link href="/workmateteams" className="nav-link-item">
               About
             </Link>
-          </li>
-          <li
+          </li> */}
+          {/* <li
             onClick={(e) => handleSubMenu(e, 2)}
             className="nav-item nav-item-has-children"
           >
@@ -140,7 +134,40 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                 <Link href="/service-details">Service Details</Link>
               </li>
             </ul>
+          </li> */}
+          <li
+            onClick={(e) => handleSubMenu(e, 2)}
+            className="nav-item nav-item-has-children"
+          >
+            <Link href="#" className="nav-link-item drop-trigger">
+              Industries
+              <Image
+                className="dropdown-icon"
+                src="/assets/img_placeholder/icon-black-cheveron-right.svg"
+                alt="cheveron-right"
+                width={16}
+                height={16}
+              />
+            </Link>
+            <ul
+              className={`sub-menu ${mobileSubMenu === 2 && "active"}`}
+              id="submenu-2"
+            >
+              {/* <li className="sub-menu--item">
+                <Link href="/workmate">Workmate</Link>
+              </li> */}
+              {/* <li className="sub-menu--item">
+                <Link href="/workmate-teams">Workmate Teams</Link>
+              </li> */}
+              <li className="sub-menu--item">
+                <Link href="/p1">Healthcare</Link>
+              </li>
+              <li className="sub-menu--item">
+                <Link href="/finance">Finance</Link>
+              </li>
+            </ul>
           </li>
+
           <li
             onClick={(e) => handleSubMenu(e, 2)}
             className="nav-item nav-item-has-children"
@@ -165,12 +192,6 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
               {/* <li className="sub-menu--item">
                 <Link href="/workmate-teams">Workmate Teams</Link>
               </li> */}
-              <li className="sub-menu--item">
-                <Link href="/p1">Healthcare</Link>
-              </li>
-              <li className="sub-menu--item">
-                <Link href="/finance">Finance</Link>
-              </li>
             </ul>
           </li>
           <li

@@ -8,7 +8,7 @@ import useAccordion from "@/components/hooks/useAccordion";
 import useTabs from "@/components/hooks/useTabs";
 import Header_01 from "@/components/header/Header_01";
 import Footer_01 from "@/components/footer/Footer_01";
-
+import { motion } from "framer-motion";
 
 
 
@@ -35,13 +35,14 @@ function Home() {
           <div className="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle pb-20 pt-28 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]">
             <div className="global-container">
               <div className="mb-14 flex flex-col items-center text-center lg:mb-20">
-                <h1 className="jos slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px]">
-                  Simplify your SaaS solution with AI
+                <h1 className="jos slide-from-bottom mb-6 max-w-[510px] text-6xl lg:max-w-[768px] xl:max-w-[1076px]">
+                  Democratizing data analytics & automation with AI
                 </h1>
                 <p className="jos slide-from-bottom mb-11 max-w-[700px] text-lg font-semibold sm:text-xl xl:max-w-[980px]">
-                  Our AI SAAS tool is a cloud-based software delivery model. It
-                  helps businesses forecast demand for products and services and
-                  optimize inventory management and supply chain operations.
+                  Unlock the full potential of your business data with AI-driven
+                  analytics and automation, delivering fine-tuned, privacy-first
+                  solutions to empower personalized, data-informed
+                  decision-making.
                 </p>
                 <div
                   className="jos flex flex-wrap justify-center gap-6"
@@ -99,7 +100,7 @@ function Home() {
               {/* Service List */}
               <ul className="jos grid grid-cols-1 gap-[2px] overflow-hidden rounded-[10px] border-2 border-black bg-black sm:grid-cols-2 lg:grid-cols-4">
                 {/* Service Item */}
-                <li className="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+                <li className="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-colorOrangyRed">
                   <div className="relative mb-9 h-[70px] w-[70px]">
                     <Image
                       src="/assets/img_placeholder/th-1/service-icon-black-1.svg"
@@ -118,7 +119,7 @@ function Home() {
                   <h3 className="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
                     <Link
                       href="/service-details"
-                      className="hover:text-colorOrangyRed"
+                      className="hover:text-[#0077b6]"
                     >
                       Privacy
                     </Link>
@@ -150,7 +151,7 @@ function Home() {
                 </li>
                 {/* Service Item */}
                 {/* Service Item */}
-                <li className="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+                <li className="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-colorOrangyRed">
                   <div className="relative mb-9 h-[70px] w-[70px]">
                     <Image
                       src="/assets/img_placeholder/th-1/service-icon-black-2.svg"
@@ -203,7 +204,7 @@ function Home() {
                 </li>
                 {/* Service Item */}
                 {/* Service Item */}
-                <li className="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+                <li className="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-colorOrangyRed">
                   <div className="relative mb-9 h-[70px] w-[70px]">
                     <Image
                       src="/assets/img_placeholder/th-1/service-icon-black-3.svg"
@@ -254,7 +255,7 @@ function Home() {
                 </li>
                 {/* Service Item */}
                 {/* Service Item */}
-                <li className="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-black">
+                <li className="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-colorOrangyRed">
                   <div className="relative mb-9 h-[70px] w-[70px]">
                     <Image
                       src="/assets/img_placeholder/th-1/service-icon-black-4.svg"
@@ -346,52 +347,119 @@ function Home() {
                   {/* Section Content Block */}
                   <div className="text-lg leading-[1.4] lg:text-[21px]">
                     <p className="mb-7 last:mb-0">
-                      Talk to your data like never before with our generative
-                      AI-based analytics solution. No need to be a data engineer
-                      to gain insights. Our AI effortlessly extracts information
-                      from both structured and unstructured data, empowering you
-                      to unlock deeper insights, enhance decision-making, and
-                      customize intelligence for your unique business needs.
-                      structured data. un-structured data.
+                      Unlock insights effortlessly with our generative AI-based
+                      analytics. No need for a data engineering background—our
+                      AI extracts intelligence from structured and unstructured
+                      data, empowering better decision-making and tailored
+                      insights for your business needs.
                     </p>
-                    <ul className="flex flex-col gap-y-5 font-dmSans text-xl leading-tight tracking-tighter text-black lg:mt-12 lg:text-[28px]">
-                      <li className="flex items-start gap-x-3">
-                        <div className="mt-[2.5px] h-[30px] w-[30px]">
-                          <Image
-                            src="/assets/img_placeholder/th-1/check-circle.svg"
-                            alt="check-circle"
-                            width="30"
-                            height="30"
-                            className="h-full w-full"
-                          />
-                        </div>
-                        Ready-to-use AI capabilities system
-                      </li>
-                      <li className="flex items-start gap-x-3">
-                        <div className="mt-[2.5px] h-[30px] w-[30px]">
-                          <Image
-                            src="/assets/img_placeholder/th-1/check-circle.svg"
-                            alt="check-circle"
-                            width="30"
-                            height="30"
-                            className="h-full w-full"
-                          />
-                        </div>
-                        Users can quickly integrate AI features
-                      </li>
-                      <li className="flex items-start gap-x-3">
-                        <div className="mt-[2.5px] h-[30px] w-[30px]">
-                          <Image
-                            src="/assets/img_placeholder/th-1/check-circle.svg"
-                            alt="check-circle"
-                            width="30"
-                            height="30"
-                            className="h-full w-full"
-                          />
-                        </div>
-                        Time savings translate to cost savings
-                      </li>
-                    </ul>
+                  </div>
+                </div>
+                {/* Content Right Block */}
+              </div>
+
+              <div className="grid grid-cols-1 items-center gap-12 mt-[40px] md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
+                {/* Content Left Block */}
+                <div
+                  className="jos order-2 overflow-hidden rounded-md"
+                  data-jos_animation="fade-left"
+                >
+                  <Image
+                    src="/assets/i.png"
+                    alt="content-image-2"
+                    width="526"
+                    height="450"
+                    className="h-auto w-full"
+                  />
+                </div>
+                {/* Content Left Block */}
+                {/* Content Right Block */}
+                <div className="jos order-1" data-jos_animation="fade-right">
+                  {/* Section Content Block */}
+                  <div className="mb-6">
+                    <h2>Discover your data insights in a whole new way</h2>
+                  </div>
+                  {/* Section Content Block */}
+                  <div className="text-lg leading-[1.4] lg:text-[21px]">
+                    <p className="mb-7 last:mb-0">
+                      See your data insights like never before with our
+                      generative AI-based analytics solution. No expertise
+                      needed—our AI extracts valuable insights from structured
+                      and unstructured data, empowering smarter, tailored
+                      business decisions.
+                    </p>
+                  </div>
+                </div>
+                {/* Content Right Block */}
+              </div>
+
+              <div className="grid grid-cols-1 items-center gap-12 mt-[100px] md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
+                {/* Content Left Block */}
+                <div
+                  className="jos order-2 overflow-hidden rounded-md"
+                  data-jos_animation="fade-left"
+                >
+                  <Image
+                    src="/assets/sharing.png"
+                    alt="content-image-2"
+                    width="526"
+                    height="450"
+                    className="h-auto w-full"
+                  />
+                </div>
+                {/* Content Left Block */}
+                {/* Content Right Block */}
+                <div className="jos order-1" data-jos_animation="fade-right">
+                  {/* Section Content Block */}
+                  <div className="mb-6">
+                    <h2>Empower Your Team by Sharing Analysis</h2>
+                  </div>
+                  {/* Section Content Block */}
+                  <div className="text-lg leading-[1.4] lg:text-[21px]">
+                    <p className="mb-7 last:mb-0">
+                      Experience data insights like never before with our
+                      generative AI-based analytics solution. Effortlessly
+                      extract insights from structured and unstructured data,
+                      make informed decisions, and collaborate seamlessly with
+                      your team in real-time.
+                    </p>
+                  </div>
+                </div>
+                {/* Content Right Block */}
+              </div>
+
+              <div className="grid grid-cols-1 items-center gap-12 mt-[100px] md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
+                {/* Content Left Block */}
+                <div
+                  className="jos order-2 overflow-hidden rounded-md"
+                  data-jos_animation="fade-left"
+                >
+                  <Image
+                    src="/assets/tools2.png"
+                    alt="content-image-2"
+                    width="526"
+                    height="450"
+                    className="h-auto w-full"
+                  />
+                </div>
+                {/* Content Left Block */}
+                {/* Content Right Block */}
+                <div className="jos order-1" data-jos_animation="fade-right">
+                  {/* Section Content Block */}
+                  <div className="mb-6">
+                    <h2 className="text-7xl">
+                      Integrate tools across systems to drive intelligent
+                      automation.
+                    </h2>
+                  </div>
+                  {/* Section Content Block */}
+                  <div className="text-lg leading-[1.4] lg:text-[21px]">
+                    <p className="mb-7 last:mb-0">
+                      Integrate tools across systems to enable intelligent
+                      automation, streamline workflows, and enhance
+                      collaboration with AI-driven insights that align your team
+                      and drive business success.
+                    </p>
                   </div>
                 </div>
                 {/* Content Right Block */}
@@ -405,89 +473,154 @@ function Home() {
 
         {/*...::: Funfact Section Start :::... */}
         <section id="funfact-section">
-          <div className="mx-auto max-w-[1500px] px-5">
-            <div className="jos grid grid-cols-1 overflow-hidden rounded-[30px] bg-black lg:rounded-[50px] xl:grid-cols-[minmax(400px,_1fr)_1.5fr] xxl:grid-cols-[1fr_minmax(800px,_1fr)]">
-              {/* Funfact Left Block */}
-              <div className="relative overflow-hidden rounded-[30px] lg:rounded-[50px]">
-                <Image
-                  src="/assets/img_placeholder/th-1/funfact-image.jpg"
-                  alt="funfact-image"
-                  width="721"
-                  height="784"
-                  className="h-80 w-full object-cover object-center lg:h-[35rem] xl:h-full"
-                />
-                {/* Video Play Button */}
-                <Link
-                  data-fslightbox="gallery"
-                  rel="noopener noreferrer"
-                  href="https://www.youtube.com/watch?v=3nQNiWdeH2Q"
-                  className="absolute left-1/2 top-1/2 z-[1] -translate-x-1/2 -translate-y-1/2"
-                >
-                  <div className="relative flex h-[120px] w-[120px] items-center justify-center rounded-full border-[3px] border-black text-lg font-bold backdrop-blur-[2px] transition-all duration-300 hover:bg-colorOrangyRed hover:text-white">
-                    Play
-                    <div className="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-30"></div>
+          <div className="pb-20">
+            {/* Section Container */}
+            <div className="global-container">
+              <div
+                id="main-div-for-wsc"
+                className="pr-4 pl-4 my-[60px]"
+              >
+                <div className="flex">
+                  <div className="flex-[60%]">
+                    <div className="relative">
+                      <motion.h2
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                        className="z-20 relative font-outfit font-[500] "
+                      >
+                        The Problem we solve
+                      </motion.h2>
+                      <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true }}
+                        className="absolute bg-[#0077b6] h-[80px] z-10 top-0 text-[#0077b6] w-[250px] p-2"
+                      ></motion.div>
+                    </div>
+                    <div className="my-[20px]">
+                      <motion.p
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.8 }}
+                        viewport={{ once: true }}
+                        className="text-2xl w-[80%] font-outfit"
+                      >
+                        We deliver secure, privacy-first generative AI solutions
+                        that enhance data insights with dynamic visualization
+                        and optimize collaboration across business verticals,
+                        ensuring maximum value from your enterprise data.
+                      </motion.p>
+                    </div>
+                    <hr className="w-[80%]" />
+                    <div className="grid grid-cols-3 gap-4 w-[80%]">
+                      <div>
+                        <div className="relative p-4">
+                          <motion.h3
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}
+                            viewport={{ once: true }}
+                            className="font-outfit relative text-5xl font-[700] z-20 "
+                          >
+                            30%
+                          </motion.h3>
+                          <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6 }}
+                            viewport={{ once: true }}
+                            className="bg-[#0077b6] w-[50px] h-[45px] absolute top-1 left-1 z-10 "
+                          ></motion.div>
+                        </div>
+                        <div>
+                          <motion.p
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6 }}
+                            viewport={{ once: true }}
+                            className="w-[80%] font-outfit text-2xl"
+                          >
+                            Increase in Efficiency
+                          </motion.p>
+                        </div>
+                      </div>
+                      <div>
+                        <div className="relative p-4">
+                          <motion.h3
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}
+                            viewport={{ once: true }}
+                            className="font-outfit relative text-5xl font-[700] z-20 "
+                          >
+                            15%
+                          </motion.h3>
+                          <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6 }}
+                            viewport={{ once: true }}
+                            className="bg-[#0077b6] w-[50px] h-[45px] absolute top-1 left-1 z-10 "
+                          ></motion.div>
+                        </div>
+                        <div>
+                          <motion.p
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6 }}
+                            viewport={{ once: true }}
+                            className="w-[80%] font-outfit text-2xl"
+                          >
+                            Increase in Revenue
+                          </motion.p>
+                        </div>
+                      </div>
+                      <div>
+                        <div className="relative p-4">
+                          <motion.h3
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}
+                            viewport={{ once: true }}
+                            className="font-outfit relative text-5xl font-[700] z-20 "
+                          >
+                            80%
+                          </motion.h3>
+                          <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6 }}
+                            viewport={{ once: true }}
+                            className="bg-[#0077b6] w-[50px] h-[45px] absolute top-1 left-1 z-10 "
+                          ></motion.div>
+                        </div>
+                        <div>
+                          <motion.p
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6 }}
+                            viewport={{ once: true }}
+                            className="w-[80%] font-outfit text-2xl"
+                          >
+                            Fatser Data Analytics
+                          </motion.p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </Link>
-                {/* Video Play Button */}
-              </div>
-              {/* Funfacct Left Block */}
-
-              {/* Funfact Right Block */}
-              <div className="self-center px-6 py-16 sm:py-20 md:px-16 xl:px-10 xl:py-24 xxl:py-32 xxl:pl-16 xxl:pr-28">
-                {/* Section Content Block */}
-                <div className="mb-8 lg:mb-16 xl:mb-6">
-                  <h2 className="text-white">
-                    AI-powered that streamline tasks
-                  </h2>
+                  <div className="flex-[40%] ">
+                    <Image
+                      src="/ai-block3.png"
+                      alt="ai"
+                      width={800}
+                      height={800}
+                    />
+                  </div>
                 </div>
-                {/* Section Content Block */}
-                <div className="text-left text-lg leading-[1.4] text-white lg:text-[21px]">
-                  <p className="mb-7 last:mb-0">
-                    As your business grows or your AI SaaS needs change, you can
-                    easily adjust your subscription level to match those needs.
-                    This flexibility ensures that AI remains an asset.
-                  </p>
-                </div>
-                {/* Horizontal Separator */}
-                <div className="my-14 h-[1px] w-full bg-colorCodGray"></div>
-                {/* Counter Scroll */}
-                <ul className="flex flex-col justify-center gap-x-11 gap-y-8 text-center sm:flex-row md:text-left xl:justify-normal xl:text-left xxl:gap-x-20">
-                  {/* Counter Items */}
-                  <li>
-                    <h3
-                      className="text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-7xl xxl:text-[120px]"
-                      data-module="countup"
-                    >
-                      <span className="start-number" data-countup-number="92">
-                        92
-                      </span>
-                      %
-                    </h3>
-                    <span className="block text-lg font-normal text-white lg:text-[21px]">
-                      Customer service inquiries
-                    </span>
-                  </li>
-                  {/* Counter Items */}
-                  {/* Counter Items */}
-                  <li>
-                    <h3
-                      className="text-5xl text-colorOrangyRed md:text-6xl lg:text-7xl xl:text-7xl xxl:text-[120px]"
-                      data-module="countup"
-                    >
-                      <span className="start-number" data-countup-number="75">
-                        75
-                      </span>
-                      %
-                    </h3>
-                    <span className="block text-lg font-normal text-white lg:text-[21px]">
-                      Using financial institutions
-                    </span>
-                  </li>
-                  {/* Counter Items */}
-                </ul>
-                {/* Counter Scroll */}
               </div>
-              {/* Funfact Right Block */}
             </div>
           </div>
         </section>

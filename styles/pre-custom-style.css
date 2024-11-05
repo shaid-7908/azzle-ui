@@ -344,12 +344,12 @@
 
 /* ...::: Custom Gradiant :::... */
 .orange-gradient-1 {
-  background: radial-gradient(50% 50% at 50% 50%, #ff9831 0%, #fe330a 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #0077b6 0%, #03045e 100%);
   filter: blur(55px);
 }
 
 .orange-gradient-2 {
-  background: radial-gradient(50% 50% at 50% 50%, #fe330a 0%, #ff9831 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #0077b6 0%, #03045e 100%);
   filter: blur(55px);
 }
 
