@@ -1,25 +1,21 @@
-'use client';
-import { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-
+"use client";
+import { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
-  const [mobileSubMenu, setMobileSubMenu] = useState('');
-  const [mobileSubMenuSub, setMobileSubMenuSub] = useState('');
-  const [menuTitle, setMenuTitle] = useState('');
-
+  const [mobileSubMenu, setMobileSubMenu] = useState("");
+  const [mobileSubMenuSub, setMobileSubMenuSub] = useState("");
+  const [menuTitle, setMenuTitle] = useState("");
   const handleMenu = () => {
     setMobileMenu(false);
-    setMobileSubMenu('');
-    setMobileSubMenuSub('');
+    setMobileSubMenu("");
+    setMobileSubMenuSub("");
   };
-
   const handleSubMenu = (e, id) => {
     e.preventDefault();
     setMobileSubMenu(id);
-
-    if (e.target.tagName === 'A') {
+    if (e.target.tagName === "A") {
       const content = e.target.firstChild.textContent;
       setMenuTitle(content);
     } else {
@@ -27,11 +23,10 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
       setMenuTitle(content);
     }
   };
-
   const handleSubMenuSub = (e, id) => {
     e.preventDefault();
     setMobileSubMenuSub(id);
-    if (e.target.tagName === 'A') {
+    if (e.target.tagName === "A") {
       const content = e.target.firstChild.textContent;
       setMenuTitle(content);
     } else {
@@ -39,18 +34,16 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
       setMenuTitle(content);
     }
   };
-
   const handleGoBack = () => {
     if (mobileSubMenuSub) {
-      setMobileSubMenuSub('');
+      setMobileSubMenuSub("");
       return;
     }
     if (mobileSubMenu) {
-      setMobileSubMenu('');
+      setMobileSubMenu("");
       return;
     }
   };
-
   return (
     <div className="menu-block-wrapper">
       <div
@@ -79,12 +72,18 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
         <ul className={`site-menu-main ${color}`}>
           {/* Global navbar */}
           <li
-            onClick={(e) => handleSubMenu(e, 1)}
+            
             className="nav-item nav-item-has-children"
           >
             <Link href="/" className="nav-link-item ">
               Home
-             
+              {/* <Image
+                className="dropdown-icon"
+                src="/assets/img_placeholder/icon-black-cheveron-right.svg"
+                alt="cheveron-right"
+                width={16}
+                height={16}
+              /> */}
             </Link>
             {/* <ul
               className={`sub-menu ${mobileSubMenu === 1 && "active"}`}
@@ -104,37 +103,11 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
               </li>
             </ul> */}
           </li>
-          {/* <li className="nav-item">
+          <li className="nav-item">
             <Link href="/workmateteams" className="nav-link-item">
               About
             </Link>
-          </li> */}
-          {/* <li
-            onClick={(e) => handleSubMenu(e, 2)}
-            className="nav-item nav-item-has-children"
-          >
-            <Link href="#" className="nav-link-item drop-trigger">
-              Services
-              <Image
-                className="dropdown-icon"
-                src="/assets/img_placeholder/icon-black-cheveron-right.svg"
-                alt="cheveron-right"
-                width={16}
-                height={16}
-              />
-            </Link>
-            <ul
-              className={`sub-menu ${mobileSubMenu === 2 && "active"}`}
-              id="submenu-2"
-            >
-              <li className="sub-menu--item">
-                <Link href="/services">Services</Link>
-              </li>
-              <li className="sub-menu--item">
-                <Link href="/service-details">Service Details</Link>
-              </li>
-            </ul>
-          </li> */}
+          </li>
           <li
             onClick={(e) => handleSubMenu(e, 2)}
             className="nav-item nav-item-has-children"
@@ -153,23 +126,16 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
               className={`sub-menu ${mobileSubMenu === 2 && "active"}`}
               id="submenu-2"
             >
-              {/* <li className="sub-menu--item">
-                <Link href="/workmate">Workmate</Link>
-              </li> */}
-              {/* <li className="sub-menu--item">
-                <Link href="/workmate-teams">Workmate Teams</Link>
-              </li> */}
               <li className="sub-menu--item">
-                <Link href="/p1">Healthcare</Link>
+                <Link href="/services">Healthcare</Link>
               </li>
               <li className="sub-menu--item">
-                <Link href="/finance">Finance</Link>
+                <Link href="/service-details">Finance</Link>
               </li>
             </ul>
           </li>
-
           <li
-            onClick={(e) => handleSubMenu(e, 2)}
+            onClick={(e) => handleSubMenu(e, 4)}
             className="nav-item nav-item-has-children"
           >
             <Link href="#" className="nav-link-item drop-trigger">
@@ -183,15 +149,13 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
               />
             </Link>
             <ul
-              className={`sub-menu ${mobileSubMenu === 2 && "active"}`}
+              className={`sub-menu ${mobileSubMenu === 4 && "active"}`}
               id="submenu-2"
             >
               <li className="sub-menu--item">
                 <Link href="/workmate">Workmate</Link>
               </li>
-              {/* <li className="sub-menu--item">
-                <Link href="/workmate-teams">Workmate Teams</Link>
-              </li> */}
+              
             </ul>
           </li>
           <li
@@ -379,5 +343,4 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
     </div>
   );
 };
-
 export default Navbar;

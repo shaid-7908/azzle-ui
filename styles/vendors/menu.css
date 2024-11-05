@@ -430,7 +430,7 @@
 
 .site-menu-main .sub-menu {
   z-index: 500;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   box-shadow: -2px 2px 70px -25px rgb(0 0 0 / 30%);
   position: absolute;
   left: 0;
@@ -456,7 +456,7 @@
   height: 0;
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
-  border-bottom: 12px solid rgb(255, 255, 255);
+  border-bottom: 12px solid #ffffff;
 }
 
 .sub-menu.megamenu:before {
@@ -489,14 +489,14 @@
 
 @media (min-width: 992px) {
   .site-menu-main .sub-menu--item {
-    color: #000;
+    color: #ffffff;
   }
 }
 
 .site-menu-main .sub-menu--item>a {
   color: inherit;
   padding: 6px 20px;
-  color: #000;
+  color: #000000;
 }
 
 @media (min-width: 992px) {
@@ -506,7 +506,7 @@
 }
 
 .site-menu-main .sub-menu--item:hover>a {
-  color: #FE330A;
+  color: #03045e;
 }
 
 @media (min-width: 992px) {

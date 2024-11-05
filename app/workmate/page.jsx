@@ -43,15 +43,12 @@ function Workmate() {
           <div className="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px]  pb-20  lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24  xxl:pb-[133px] ">
             <div className="global-container ">
               <div className="pb-10">
-                <p className="text-center text-xl font-medium">
-                  Workmate is a secure, privacy-first generative AI-based
-                  conversational data analytics platform that enables users to
-                  integrate business data from multiple sources. It enhances
-                  data insights with dynamic visualizations, allowing users to
-                  interact with data by asking questions, generate insights, and
-                  collaborate across business verticals for optimized research
-                  and analytics, ensuring maximum value from your enterprise
-                  data.
+                <p className="text-center text-base md:text-xl font-medium">
+                  Workmate is a privacy-first, on-premise conversational data
+                  analytics platform, powered by a small language model tailored
+                  for specific use cases. It enables secure data integration,
+                  insights, dynamic visualizations, and team collaboration to
+                  maximize enterprise data value.
                 </p>
               </div>
               <div
@@ -74,23 +71,22 @@ function Workmate() {
           <div className="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px]  pb-20  lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24  xxl:pb-[133px] ">
             <div className="global-container ">
               <div className="pb-20">
-                <h1 className="text-7xl text-center">
-                  Workmate Solutions Offerings
-                </h1>
+                <h2 className="text-center">Workmate Solutions Offerings</h2>
               </div>
               <div>
                 {/*..::Diagram 1 ::..*/}
-                <div className="flex mb-[80px]">
+                <div className="flex flex-col-reverse md:flex-row mb-[80px]">
                   <div className="flex-1 flex justify-center items-start p-4">
                     <div>
-                      <h6 className="tracking-wide my-2 text-4xl">
-                        Dynamic Ai data analytics with public LLM model.
-                      </h6>
-                      <p className="w-[80%] my-8 ">
-                        Our dynamic AI data analytics solution employs public
-                        LLM models to help new users familiarize themselves with
-                        the system. During the onboarding process, user data is
-                        securely processed in a centralized cloud, with
+                      <h3 className="tracking-wide my-2 md:text-4xl">
+                        Conversational data analytics with public LLM model.
+                      </h3>
+                      <p className=" text-base md:text-xl md:w-[80%] my-8 ">
+                        In this solution, Workmate offers a public generative AI
+                        model option, ideal for non-sensitive data and for
+                        helping new users get familiar with the system. During
+                        onboarding, user data is securely processed in a
+                        centralized cloud, providing an easy starting point with
                         personalized insights.
                       </p>
                       <Link
@@ -112,20 +108,21 @@ function Workmate() {
                   </div>
                 </div>
                 {/*..::Diagram2 ::.. */}
-                <div className="flex flex-row-reverse mb-[80px]">
+                <div className="flex flex-col-reverse  md:flex-row-reverse mb-[80px]">
                   <div className="flex-1 flex justify-center items-start p-4">
                     <div>
-                      <h6 className="tracking-wide my-2 text-4xl">
-                        Dynamic Ai data analytics private fine tuned LLM model.
-                      </h6>
-                      <p className="w-[80%] my-8 ">
-                        Our dynamic AI data analytics solution offers enhanced
-                        security and personalization by utilizing private,
-                        fine-tuned LLM models hosted on Workmate&rsquo;s central
-                        server. This setup ensures data isolation, compliance
-                        with privacy standards, and tailored insights for users
-                        with moderate to high privacy requirements, making it a
-                        trusted choice for sensitive data.
+                      <h3 className="tracking-wide my-2 md:text-4xl">
+                        Conversational data analytics private fine tuned LLM
+                        model.
+                      </h3>
+                      <p className="text-base md:text-xl md:w-[80%] my-8 ">
+                        Workmate offers enhanced security and personalization by
+                        utilizing private, fine-tuned LLM models hosted on
+                        Workmate&rsquo;s central server. This setup ensures data
+                        isolation, compliance with privacy standards, and
+                        tailored insights for users with moderate to high
+                        privacy requirements, making it a trusted choice for
+                        sensitive data.
                       </p>
                       <Link
                         href="#"
@@ -146,14 +143,14 @@ function Workmate() {
                   </div>
                 </div>
                 {/*..::Diagram3::.. */}
-                <div className="flex mb-[80px]">
+                <div className="flex flex-col-reverse md:flex-row mb-[80px]">
                   <div className="flex-1 flex justify-center items-start p-4">
                     <div>
-                      <h6 className="tracking-wide my-2 text-4xl">
-                        Dynamic Ai data analytics with on-premise private fine
-                        tuned LLM model.
-                      </h6>
-                      <p className="w-[80%] my-8 ">
+                      <h3 className="tracking-wide my-2 md:text-4xl">
+                        Conversational data analytics with on-premise private
+                        fine tuned LLM model.
+                      </h3>
+                      <p className="text-base md:text-xl md:w-[80%] my-8 ">
                         Our dynamic AI data analytics solution features
                         on-premise private fine-tuned LLM models, making it the
                         most secure system for enterprises with high security
@@ -188,19 +185,19 @@ function Workmate() {
           </div>
         </section>
         {/*......:: Feature section ::..... */}
-        <section>
-          <div className="relative z-[1] overflow-hidden   bg-slate-900 pb-20   lg:pb-24  xxl:pb-[0px] ">
+        <section id="feature-section">
+          <div className="relative z-[1] overflow-hidden   bg-colorOrangyRed pb-20   lg:pb-24  xxl:pb-[0px] ">
             <div className="global-container ">
               <h1 className="text-center text-7xl text-white">Features</h1>
               <div className="py-20">
                 {/*....:::Feature one:::.... */}
-                <div className="flex">
-                  <div className="flex-1 px-10">
+                <div className="flex flex-col-reverse md:flex-row">
+                  <div className="flex-1 md:px-10 ">
                     <div className="text-white">
-                      <h4 className="text-5xl text-colorOrangyRed">
+                      <h4 className="text-4xl mt-8 md:mt-0 text-center md:text-left md:text-5xl text-[#00b4d8]">
                         Conversational data analytics
                       </h4>
-                      <p className="w-[80%] my-4">
+                      <p className="text-base text-center md:text-left md:text-lg md:w-[80%] my-4">
                         Engage with your data like never before through our
                         conversational data analytics platform. Effortlessly
                         extract insights from structured and unstructured data,
@@ -214,13 +211,13 @@ function Workmate() {
                   </div>
                 </div>
                 {/*....::Feature two:::... */}
-                <div className="flex  my-20">
-                  <div className="flex-1 px-10">
+                <div className="flex flex-col-reverse md:flex-row   my-20">
+                  <div className="flex-1 md:px-10">
                     <div className="text-white">
-                      <h4 className="text-5xl text-colorOrangyRed">
+                      <h4 className="text-4xl mt-8 md:mt-0 text-center md:text-left md:text-5xl text-[#00b4d8]">
                         Dynamic Data visualization
                       </h4>
-                      <p className="w-[80%] my-4">
+                      <p className="text-base text-center md:text-left md:text-lg md:w-[80%] my-4">
                         Unlock your data insights with our generative AI-based
                         analytics solution. Easily extract valuable insights
                         from structured and unstructured data, empowering
@@ -231,6 +228,32 @@ function Workmate() {
                   </div>
                   <div className="flex-1 rounded-lg overflow-hidden">
                     <video src="/chart.mp4" autoPlay loop muted />
+                  </div>
+                </div>
+
+                <div className="flex flex-col-reverse md:flex-row   my-20">
+                  <div className="flex-1 md:px-10">
+                    <div className="text-white">
+                      <h4 className="text-4xl mt-8 md:mt-0 text-center md:text-left md:text-5xl text-[#00b4d8]">
+                        Secure, Scalable, In-House AI Hosting
+                      </h4>
+                      <p className="text-base text-center md:text-left md:text-lg md:w-[80%] my-4">
+                        Bring AI capabilities directly to your infrastructure,
+                        ensuring data privacy, enhanced performance, and
+                        seamless integration with your existing systems. Our
+                        on-premise AI hosting solution offers full control and
+                        customization, empowering your organization to scale and
+                        innovate without compromising security or compliance.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex-1 rounded-lg overflow-hidden bg-white">
+                    <Image
+                      src="/assets/j.png"
+                      width={700}
+                      height={400}
+                      alt="hosting"
+                    />
                   </div>
                 </div>
               </div>
@@ -380,7 +403,7 @@ function Workmate() {
         {/*...::: FAQ Section End :::... */}
         {/*...::: FAQ Section End :::... */}
       </main>
-      <Footer_01/>
+      <Footer_01 />
     </>
   );
 }

@@ -35,10 +35,10 @@ function Home() {
           <div className="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle pb-20 pt-28 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24 lg:pt-32 xl:pt-40 xxl:pb-[133px] xxl:pt-[195px]">
             <div className="global-container">
               <div className="mb-14 flex flex-col items-center text-center lg:mb-20">
-                <h1 className="jos slide-from-bottom mb-6 max-w-[510px] text-6xl lg:max-w-[768px] xl:max-w-[1076px]">
+                <h1 className="jos slide-from-bottom mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1076px]">
                   Democratizing data analytics & automation with AI
                 </h1>
-                <p className="jos slide-from-bottom mb-11 max-w-[700px] text-lg font-semibold sm:text-xl xl:max-w-[980px]">
+                <p className="jos slide-from-bottom mb-11 max-w-[700px]  font-semibold sm:text-xl xl:max-w-[980px]">
                   Unlock the full potential of your business data with AI-driven
                   analytics and automation, delivering fine-tuned, privacy-first
                   solutions to empower personalized, data-informed
@@ -119,7 +119,7 @@ function Home() {
                   <h3 className="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
                     <Link
                       href="/service-details"
-                      className="hover:text-[#0077b6]"
+                      className="hover:text-[#00b48d]"
                     >
                       Privacy
                     </Link>
@@ -171,7 +171,7 @@ function Home() {
                   <h3 className="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
                     <Link
                       href="/service-details"
-                      className="hover:text-colorOrangyRed"
+                      className="hover:text-[#00b48d]"
                     >
                       Personalization
                     </Link>
@@ -223,7 +223,7 @@ function Home() {
                   <h3 className="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
                     <Link
                       href="/service-details"
-                      className="hover:text-colorOrangyRed"
+                      className="hover:text-[#00b48d]"
                     >
                       Powerful
                     </Link>
@@ -274,7 +274,7 @@ function Home() {
                   <h3 className="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
                     <Link
                       href="/service-details"
-                      className="hover:text-colorOrangyRed"
+                      className="hover:text-[#00b48d]"
                     >
                       Customizable
                     </Link>
@@ -476,10 +476,7 @@ function Home() {
           <div className="pb-20">
             {/* Section Container */}
             <div className="global-container">
-              <div
-                id="main-div-for-wsc"
-                className="pr-4 pl-4 my-[60px]"
-              >
+              <div id="main-div-for-wsc" className="pr-4 pl-4 my-[60px]">
                 <div className="flex">
                   <div className="flex-[60%]">
                     <div className="relative">
@@ -626,8 +623,6 @@ function Home() {
         </section>
         {/*...::: Funfact Section End :::... */}
 
-        
-
         {/*...::: FAQ Section Start :::... */}
         <section className="faq-section">
           {/* Section Spacer */}
@@ -772,7 +767,7 @@ function Home() {
         {/*...::: Testimonial Section Start :::... */}
         <section className="testimonial-section">
           {/* Section Spacer */}
-          <div className="bg-black pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
+          <div className="bg-colorOrangyRed pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
             {/* Section Container */}
             <div className="global-container">
               {/* Section Content Block */}
@@ -1032,12 +1027,6 @@ function Home() {
           {/* Section Spacer */}
         </section>
         {/*...::: Testimonial Section Start :::... */}
-
-        {/* Body Background Shape 1 */}
-        <div className="orange-gradient-1 absolute -left-[15px] top-[64%] -z-[1] h-[400px] w-[400px] -rotate-[-9.022deg] rounded-[400px]"></div>
-
-        {/* Body Background Shape 2 */}
-        <div className="orange-gradient-2 absolute -left-[100px] top-[67%] -z-[1] h-[360px] w-[360px] -rotate-[-9.022deg] rounded-[360px]"></div>
       </main>
       {/*...::: Footer Start :::... */}
       <Footer_01 />

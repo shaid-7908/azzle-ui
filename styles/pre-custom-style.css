@@ -152,7 +152,7 @@
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   --tw-bg-opacity: 1;
-  background-color: rgb(239 234 227 / var(--tw-bg-opacity));
+  background-color: rgb(202 240 248 / var(--tw-bg-opacity));
   padding-bottom: 4rem;
   padding-top: 6rem;
 }
@@ -238,7 +238,7 @@
 
 .breadcrumb-nav li:last-child {
   --tw-text-opacity: 1;
-  color: rgb(254 51 10 / var(--tw-text-opacity));
+  color: rgb(3 4 94 / var(--tw-text-opacity));
 }
 
 .breadcrumb-nav li:last-child::after {
@@ -253,7 +253,7 @@
 
 .breadcrumb-nav a:hover {
   --tw-text-opacity: 1;
-  color: rgb(254 51 10 / var(--tw-text-opacity));
+  color: rgb(3 4 94 / var(--tw-text-opacity));
 }
 
 .testimonial-nav {
