@@ -68,7 +68,7 @@ function Home() {
               >
                 <video
                   ref={videoRef}
-                  src="https://res.cloudinary.com/dycvkezau/video/upload/v1726466036/demo-chat-rec-1_mto9ry.mp4"
+                  src="https://res.cloudinary.com/dycvkezau/video/upload/v1731162088/Untitled_video_-_Made_with_Clipchamp_1_g1pnhd.mp4"
                   autoPlay
                   loop
                   muted
@@ -348,10 +348,9 @@ function Home() {
                   <div className="text-lg leading-[1.4] lg:text-[21px]">
                     <p className="mb-7 last:mb-0">
                       Unlock insights effortlessly with our generative AI-based
-                      analytics. No need for a data engineering background—our
-                      AI extracts intelligence from structured and unstructured
-                      data, empowering better decision-making and tailored
-                      insights for your business needs.
+                      analytics. Our AI extracts intelligence from structured
+                      and unstructured data, empowering better decision-making
+                      and tailored insights for your business needs.
                     </p>
                   </div>
                 </div>
@@ -382,9 +381,7 @@ function Home() {
                   {/* Section Content Block */}
                   <div className="text-lg leading-[1.4] lg:text-[21px]">
                     <p className="mb-7 last:mb-0">
-                      See your data insights like never before with our
-                      generative AI-based analytics solution. No expertise
-                      needed—our AI extracts valuable insights from structured
+                      Our AI platform extracts valuable insights from structured
                       and unstructured data, empowering smarter, tailored
                       business decisions.
                     </p>
@@ -417,11 +414,9 @@ function Home() {
                   {/* Section Content Block */}
                   <div className="text-lg leading-[1.4] lg:text-[21px]">
                     <p className="mb-7 last:mb-0">
-                      Experience data insights like never before with our
-                      generative AI-based analytics solution. Effortlessly
-                      extract insights from structured and unstructured data,
-                      make informed decisions, and collaborate seamlessly with
-                      your team in real-time.
+                      Effortlessly extract insights from structured and
+                      unstructured data, make informed decisions, and
+                      collaborate seamlessly with your team in real-time.
                     </p>
                   </div>
                 </div>
@@ -494,7 +489,7 @@ function Home() {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true }}
-                        className="absolute bg-[#0077b6] h-[40px] md:h-[80px] z-10 top-0 text-[#0077b6] w-[100px] md:w-[250px] p-2"
+                        className="absolute bg-[#00b4d8] h-[40px] md:h-[80px] z-10 top-0 text-[#0077b6] w-[100px] md:w-[250px] p-2"
                       ></motion.div>
                     </div>
                     <div className="my-[20px]">
@@ -529,7 +524,7 @@ function Home() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6 }}
                             viewport={{ once: true }}
-                            className="bg-[#0077b6] w-[50px] h-[45px] absolute top-1 left-1 z-10 "
+                            className="bg-[#00b4d8] w-[50px] h-[45px] absolute top-1 left-1 z-10 "
                           ></motion.div>
                         </div>
                         <div>
@@ -560,7 +555,7 @@ function Home() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6 }}
                             viewport={{ once: true }}
-                            className="bg-[#0077b6] w-[50px] h-[45px] absolute top-1 left-1 z-10 "
+                            className="bg-[#00b4d8] w-[50px] h-[45px] absolute top-1 left-1 z-10 "
                           ></motion.div>
                         </div>
                         <div>
@@ -591,7 +586,7 @@ function Home() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6 }}
                             viewport={{ once: true }}
-                            className="bg-[#0077b6] w-[50px] h-[45px] absolute top-1 left-1 z-10 "
+                            className="bg-[#00b4d8] w-[50px] h-[45px] absolute top-1 left-1 z-10 "
                           ></motion.div>
                         </div>
                         <div>
@@ -653,7 +648,7 @@ function Home() {
                       href="/faq-1"
                       className="button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
                     >
-                      Ask you questions
+                      Ask us any Question.
                     </Link>
                   </div>
                 </div>
