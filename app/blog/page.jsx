@@ -2,8 +2,13 @@ import Footer_01 from "@/components/footer/Footer_01";
 import Header_01 from "@/components/header/Header_01";
 import Image from "next/image";
 import Link from "next/link";
+import { getBlogMetadata } from "@/components/hooks/getBlogs";
 
 function Blog() {
+
+	const blogs = getBlogMetadata()
+	
+	
 	return (
 		<>
 			<Header_01 />
@@ -40,290 +45,58 @@ function Blog() {
 									{/* Blog Post List */}
 									<ul className="grid grid-cols-2 gap-6">
 										{/* Blog Post Single Item */}
-										<li className="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]">
-											<Link
-												href="/blog-details"
-												className="block overflow-hidden"
-											>
-												<Image
-													src="/assets/img_placeholder/th-1/blog-main-1.jpg"
-													alt="blog-main-1"
-													width={856}
-													height={540}
-													className="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
-												/>
-											</Link>
-											<div className="border border-[#EAEDF0] p-[30px]">
-												{/* Blog Post Meta */}
-												<ul className="flex flex-wrap items-center gap-6">
-													<li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-														<Link
-															href="/blog-details"
-															className="hover:text-colorOrangyRed"
-														>
-															Business
-														</Link>
-													</li>
-													<li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-														<Link
-															href="/blog-details"
-															className="hover:text-colorOrangyRed"
-														>
-															June 12, 2024
-														</Link>
-													</li>
-												</ul>
-												{/* Blog Post Meta */}
-												<h5 className="mb-3 mt-7 hover:text-colorOrangyRed">
-													<Link href="/blog-details">
-														10 ways to supercharge startup with AI integration
-													</Link>
-												</h5>
-												<p className="mb-7 line-clamp-2 last:mb-0">
-													The rapid advancements in AI have paved the way for
-													startups to revolutionize various industries, from
-													healthcare to finance, by leveraging the power of
-													machine learning and automation.
-												</p>
-											</div>
-										</li>
+										{blogs?.map((element,index)=>{
+                                        return <li key={index} className="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]">
+                                          <Link
+                                            href="/blog-details"
+                                            className="block overflow-hidden"
+                                          >
+                                            <Image
+                                              src="/assets/img_placeholder/th-1/blog-main-1.jpg"
+                                              alt="blog-main-1"
+                                              width={856}
+                                              height={540}
+                                              className="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
+                                            />
+                                          </Link>
+                                          <div className="border border-[#EAEDF0] p-[30px]">
+                                            {/* Blog Post Meta */}
+                                            {/* <ul className="flex flex-wrap items-center gap-6">
+                                              <li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
+                                                <Link
+                                                  href="/blog-details"
+                                                  className="hover:text-colorOrangyRed"
+                                                >
+                                                  Business
+                                                </Link>
+                                              </li>
+                                              <li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
+                                                <Link
+                                                  href="/blog-details"
+                                                  className="hover:text-colorOrangyRed"
+                                                >
+                                                  June 12, 2024
+                                                </Link>
+                                              </li>
+                                            </ul> */}
+                                            {/* Blog Post Meta */}
+                                            <h5 className="mb-3 mt-7 text-xl tracking-wide hover:text-colorOrangyRed">
+                                              <Link href={`/blog/${element.filename}`}>
+                                                {element.title}
+                                              </Link>
+                                            </h5>
+                                            <p className="mb-7 line-clamp-2 last:mb-0">
+                                             {element.description}
+                                            </p>
+                                          </div>
+                                        </li>;
+										})}
+										
 										{/* Blog Post Single Item */}
-										{/* Blog Post Single Item */}
-										<li className="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]">
-											<Link
-												href="/blog-details"
-												className="block overflow-hidden"
-											>
-												<Image
-													src="/assets/img_placeholder/th-1/blog-main-2.jpg"
-													alt="blog-main-2"
-													width={856}
-													height={540}
-													className="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
-												/>
-											</Link>
-											<div className="border border-[#EAEDF0] p-[30px]">
-												{/* Blog Post Meta */}
-												<ul className="flex flex-wrap items-center gap-6">
-													<li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-														<Link
-															href="/blog-details"
-															className="hover:text-colorOrangyRed"
-														>
-															Technology
-														</Link>
-													</li>
-													<li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-														<Link
-															href="/blog-details"
-															className="hover:text-colorOrangyRed"
-														>
-															June 10, 2024
-														</Link>
-													</li>
-												</ul>
-												{/* Blog Post Meta */}
-												<h5 className="mb-3 mt-7 hover:text-colorOrangyRed">
-													<Link href="/blog-details">
-														Testing AI tools to improve product descriptions
-													</Link>
-												</h5>
-												<p className="mb-7 line-clamp-2 last:mb-0">
-													Amazon is currently testing generative artificial
-													intelligence (AI) tools for...
-												</p>
-											</div>
-										</li>
-										{/* Blog Post Single Item */}
-										{/* Blog Post Single Item */}
-										<li className="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]">
-											<Link
-												href="/blog-details"
-												className="block overflow-hidden"
-											>
-												<Image
-													src="/assets/img_placeholder/th-1/blog-main-3.jpg"
-													alt="blog-main-3"
-													width={856}
-													height={540}
-													className="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
-												/>
-											</Link>
-											<div className="border border-[#EAEDF0] p-[30px]">
-												{/* Blog Post Meta */}
-												<ul className="flex flex-wrap items-center gap-6">
-													<li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-														<Link
-															href="/blog-details"
-															className="hover:text-colorOrangyRed"
-														>
-															Marketing
-														</Link>
-													</li>
-													<li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-														<Link
-															href="/blog-details"
-															className="hover:text-colorOrangyRed"
-														>
-															June 09, 2024
-														</Link>
-													</li>
-												</ul>
-												{/* Blog Post Meta */}
-												<h5 className="mb-3 mt-7 hover:text-colorOrangyRed">
-													<Link href="/blog-details">
-														3 best AI businesses to make money with in 2024
-													</Link>
-												</h5>
-												<p className="mb-7 line-clamp-2 last:mb-0">
-													Everyone is buzzing about AI and its potential to
-													revolutionize the business...
-												</p>
-											</div>
-										</li>
-										{/* Blog Post Single Item */}
-										{/* Blog Post Single Item */}
-										<li className="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]">
-											<Link
-												href="/blog-details"
-												className="block overflow-hidden"
-											>
-												<Image
-													src="/assets/img_placeholder/th-1/blog-main-4.jpg"
-													alt="blog-main-4"
-													width={856}
-													height={540}
-													className="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
-												/>
-											</Link>
-											<div className="border border-[#EAEDF0] p-[30px]">
-												{/* Blog Post Meta */}
-												<ul className="flex flex-wrap items-center gap-6">
-													<li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-														<Link
-															href="/blog-details"
-															className="hover:text-colorOrangyRed"
-														>
-															Artificial Intelligence
-														</Link>
-													</li>
-													<li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-														<Link
-															href="/blog-details"
-															className="hover:text-colorOrangyRed"
-														>
-															June 07, 2024
-														</Link>
-													</li>
-												</ul>
-												{/* Blog Post Meta */}
-												<h5 className="mb-3 mt-7 hover:text-colorOrangyRed">
-													<Link href="/blog-details">
-														Phrase gives AI-generated content for me at a glance
-													</Link>
-												</h5>
-												<p className="mb-7 line-clamp-2 last:mb-0">
-													While this is incredibly rewarding and has sharpened
-													my editorial skills...
-												</p>
-											</div>
-										</li>
-										{/* Blog Post Single Item */}
-										{/* Blog Post Single Item */}
-										<li className="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]">
-											<Link
-												href="/blog-details"
-												className="block overflow-hidden"
-											>
-												<Image
-													src="/assets/img_placeholder/th-1/blog-main-5.jpg"
-													alt="blog-main-5"
-													width={856}
-													height={540}
-													className="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
-												/>
-											</Link>
-											<div className="border border-[#EAEDF0] p-[30px]">
-												{/* Blog Post Meta */}
-												<ul className="flex flex-wrap items-center gap-6">
-													<li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-														<Link
-															href="/blog-details"
-															className="hover:text-colorOrangyRed"
-														>
-															Graphics
-														</Link>
-													</li>
-													<li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-														<Link
-															href="/blog-details"
-															className="hover:text-colorOrangyRed"
-														>
-															June 05, 2024
-														</Link>
-													</li>
-												</ul>
-												{/* Blog Post Meta */}
-												<h5 className="mb-3 mt-7 hover:text-colorOrangyRed">
-													<Link href="/blog-details">
-														Testing out Stabilization AI s free image editing
-														tool
-													</Link>
-												</h5>
-												<p className="mb-7 line-clamp-2 last:mb-0">
-													Stability AI is the company that created an
-													open-source AI image generator...
-												</p>
-											</div>
-										</li>
-										{/* Blog Post Single Item */}
-										{/* Blog Post Single Item */}
-										<li className="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]">
-											<Link
-												href="/blog-details"
-												className="block overflow-hidden"
-											>
-												<Image
-													src="/assets/img_placeholder/th-1/blog-main-6.jpg"
-													alt="blog-main-6"
-													width={856}
-													height={540}
-													className="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
-												/>
-											</Link>
-											<div className="border border-[#EAEDF0] p-[30px]">
-												{/* Blog Post Meta */}
-												<ul className="flex flex-wrap items-center gap-6">
-													<li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-														<Link
-															href="/blog-details"
-															className="hover:text-colorOrangyRed"
-														>
-															UI/UX
-														</Link>
-													</li>
-													<li className="relative font-semibold after:absolute after:left-full after:top-1/2 after:h-[7px] after:w-[7px] after:-translate-y-1/2 after:translate-x-2 after:rounded-full after:bg-colorCodGray last:after:hidden">
-														<Link
-															href="/blog-details"
-															className="hover:text-colorOrangyRed"
-														>
-															June 01, 2024
-														</Link>
-													</li>
-												</ul>
-												{/* Blog Post Meta */}
-												<h5 className="mb-3 mt-7 hover:text-colorOrangyRed">
-													<Link href="/blog-details">
-														How to started using AI-based tools as a designer
-													</Link>
-												</h5>
-												<p className="mb-7 line-clamp-2 last:mb-0">
-													Acting on Jakob Nielsen’s stunning prediction of AI
-													being the future...
-												</p>
-											</div>
-										</li>
-										{/* Blog Post Single Item */}
+										
+										
+									
+									
 									</ul>
 									{/* Blog Post List */}
 									{/* Pagination */}
