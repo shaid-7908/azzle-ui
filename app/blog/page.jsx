@@ -52,7 +52,7 @@ function Blog() {
                                             className="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]"
                                           >
                                             <Link
-                                              href="/blog-details"
+                                              href={`/blog/${element.filename}`}
                                               className="block overflow-hidden"
                                             >
                                               <Image
