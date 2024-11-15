@@ -430,7 +430,7 @@ function Home() {
                   data-jos_animation="fade-left"
                 >
                   <Image
-                    src="/assets/tools2.png"
+                    src="/assets/tools3.png"
                     alt="content-image-2"
                     width="526"
                     height="450"

@@ -43,7 +43,7 @@ function Blog() {
 							<div className="grid grid-cols-1 gap-x-6 gap-y-10 lg:grid-cols-[1fr,minmax(416px,_0.45fr)]">
 								<div className="flex flex-col gap-y-10 lg:gap-y-14 xl:gap-y-20">
 									{/* Blog Post List */}
-									<ul className="grid grid-cols-2 gap-6">
+									<ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
 										{/* Blog Post Single Item */}
 										{blogs?.map((element,index)=>{
                                         return (

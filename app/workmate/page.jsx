@@ -276,12 +276,13 @@ function Workmate() {
                       </p>
                     </div>
                   </div>
-                  <div className="flex-1 rounded-lg overflow-hidden bg-white">
+                  <div className="flex-1 rounded-lg relative overflow-hidden bg-white">
                     <Image
                       src="/assets/j.png"
-                      width={700}
-                      height={400}
+                      
                       alt="hosting"
+                      
+                     fill={true}
                     />
                   </div>
                 </div>
