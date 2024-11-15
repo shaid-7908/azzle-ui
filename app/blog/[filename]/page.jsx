@@ -8,15 +8,16 @@ import { useMemo } from "react";
 function BlogDetails({params}) {
     const file = params.filename + '.md'
     const blogData = getBlogContent(file)
-
+    
     const renderers = useMemo(
       () => ({
 
         p: ({ ...props }) => <p className="" {...props} />,
         h1:({...props})=><h1 className="text-4xl tracking-wide leading-relaxed" {...props}/>,
-        h2:({...props})=><h2 className="text-2xl tracking-wide leading-relaxed" {...props}/>,
+        h2:({...props})=><h2 className="text-2xl my-2 tracking-wide leading-relaxed" {...props}/>,
         h3: ({ ...props }) => <h3 className="text-xl tracking-wide font-bold" {...props} />,
         img:({...props})=><img className="" {...props}/>,
+        blockquote:({...props})=><blockquote className="px-[1em] border-l-[0.25em]" {...props}/>,
         strong: ({ ...props }) => (
           <strong className="font-[600] " {...props} />
         ),
@@ -48,7 +49,7 @@ function BlogDetails({params}) {
                   <li>
                     <Link href="/">Home</Link>
                   </li>
-                  <li>Blog Details</li>
+                  <li>{params.filename}</li>
                 </ul>
               </div>
             </div>

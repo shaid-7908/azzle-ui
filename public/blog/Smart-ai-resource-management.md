@@ -2,7 +2,7 @@
 ---
 ### Efficiently plan and manage pipeline outages with Workmate, designed to streamline complex operational demands and optimize resource allocation for the energy sector.
 
-![image hero](https://res.cloudinary.com/dycvkezau/image/upload/v1731564318/bog-1-hero_rc623y.png)
+![image hero](../blog-image/blog-2/blog-2-hero.png)
 
 With Workmates’s Pipeline Outage Scheduling app, energy companies can navigate the complex planning of pipeline outages with an AI-driven approach, optimizing for minimal disruption to operations and customer impact. This solution allows operations teams to strategically plan outages around seasonal demand, resource availability, and real-time conditions—helping to ensure peak operational efficiency and swift decision-making.
 
@@ -11,6 +11,7 @@ With Workmates’s Pipeline Outage Scheduling app, energy companies can navigate
 Workmate’s Pipeline Outage Scheduling solution empowers operations teams to optimize pipeline outage schedules while balancing the needs of stakeholders and minimizing impact on customers. This tool simplifies complex planning processes, enabling teams to respond dynamically to changing demands and achieve strategic alignment.
 
 ### Key Features
+![image 1](../blog-image/blog-2/blog-2-p1.png)
 
 1. **Outage Impact Analysis**
    - **Description:** Visualize and analyze customer and operational impact by evaluating outage frequency, flow disruption, financial costs, and resource availability.
