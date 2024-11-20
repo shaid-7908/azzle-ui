@@ -2,7 +2,7 @@
 ---
 ### Empowering teams to monitor, manage, and resolve issues with speed and precision—no extra staff needed.
 
-![image hero](../blog-image/blog-1/bog-1-hero.png)
+![image hero](../blog-image/blog-1/napkin-selection.svg)
 
 ### Overview
 
@@ -14,12 +14,12 @@ Introduction:
 ### Core Feature
 
 1. **Real-time Data Streaming**
-   >Stream sensor data in near real-time from SCADA systems, OSI Pi historians, and unstructured data sources like maintenance logs and equipment blueprints. Automatically process this information into actionable insights, empowering rapid response.![image 2](../blog-image/blog-1/blog-1-pi2.png)
+   >Stream sensor data in near real-time from SCADA systems, OSI Pi historians, and unstructured data sources like maintenance logs and equipment blueprints. Automatically process this information into actionable insights, empowering rapid response.![image 2](../blog-image/blog-1/real-time.svg)
 2. **Advanced Sensor Analytics**
    >Leverage time-series data analytics for immediate insights and historical analysis. Build customized dashboards with just a few clicks—whether your data spans sub-second intervals or decades. Workmate’s efficient visualization tools adapt seamlessly to any scale.![image 4](../blog-image/blog-1/blog-1-p3.png)
 
 3. **Smart Alerting**
-   >With natural language, set alerts for anomalies—such as ‘notify when compressor inlet pressure rises by 20% above its 30-day average.’ AI-driven logic enables prompt, automated responses to potential issues, minimizing downtime.![image 4](../blog-image/blog-1/blog-1-p4.png)
+   >With natural language, set alerts for anomalies—such as ‘notify when compressor inlet pressure rises by 20% above its 30-day average.’ AI-driven logic enables prompt, automated responses to potential issues, minimizing downtime.![image 4](../blog-image/blog-1/aleart.svg)
 
 
 4. **Intuitive Case Management**
