@@ -2,14 +2,14 @@
 ---
 ### Empowering teams to monitor, manage, and resolve issues with speed and precision—no extra staff needed.
 
-![image hero](../blog-image/blog-1/napkin-selection.svg)
+![image hero](../blog-image/blog-1/blog-1-dash.png)
 
 ### Overview
 
 Introduction:
 >Transform how your team manages physical assets across industries with Workmate’s Smart Alerting and Case Management. From real-time monitoring to intelligent anomaly detection and case handling, our AI workflow automation platform streamlines asset management for upstream, midstream, and downstream sectors. Designed to integrate with existing infrastructure, Workmate enables enterprises and SMEs to address issues more efficiently, without increasing personnel.
 
-![image 1](../blog-image/blog-1/blog-1-p1.png)
+![image 1](../blog-image/blog-1/napkin-selection.svg)
 
 ### Core Feature
 

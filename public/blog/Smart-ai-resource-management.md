@@ -1,4 +1,5 @@
 # Smart AI-Powered Pipeline Outage Scheduling for Efficient Resource Management.
+
 ---
 ### Efficiently plan and manage pipeline outages with Workmate, designed to streamline complex operational demands and optimize resource allocation for the energy sector.
 
