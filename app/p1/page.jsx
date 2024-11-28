@@ -49,7 +49,7 @@ function Product1() {
         {/*...::First Hero section::... */}
 
         {/*....::Financial Hero section::.... */}
-        <section id="finance-hero">
+        <section id="Health-hero">
           <div className="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px]  pb-20  lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24  xxl:pb-[133px] ">
             <div className="global-container ">
               <div className="my-20">
@@ -63,7 +63,7 @@ function Product1() {
                   <br /> hosted either publicly or on-premises.
                 </p>
               </div>
-              <div className=" mt-9 grid grid-cols-3 gap-4 ">
+              <div className=" mt-9 grid grid-cols-1 md:grid-cols-3 gap-4 ">
                 <div className="   unique-shadow">
                   <div className="bg-black text-colorOrangyRed  text-3xl font-bold text-center p-5 my-8">
                     Public LLM
@@ -94,7 +94,7 @@ function Product1() {
               </div>
 
               <div className="mb-10 mt-40">
-                <div className="flex">
+                <div className="flex flex-col-reverse md:flex-row">
                   <div className="flex-1 flex justify-center items-center">
                     <div>
                       <h2 className="text-3xl my-2">
@@ -105,7 +105,7 @@ function Product1() {
                         all-in-one place (Postgres, MySQL, Snowflake, BigQuery,
                         and more).
                       </p>
-                      <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed w-[30%]">
+                      <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed md:w-[30%]">
                         All intigration
                       </div>
                     </div>
@@ -122,10 +122,10 @@ function Product1() {
               </div>
 
               <div className="mt-40">
-                <div className="flex">
+                <div className="flex flex-col-reverse md:flex-row">
                   <div className="flex-1 flex justify-center items-center">
                     <div>
-                      <h2 className="text-3xl">
+                      <h2 className="text-3xl my-4 md:my-1">
                         Chat with your database, visualize insights, & perform
                         analysis
                       </h2>
@@ -134,7 +134,7 @@ function Product1() {
                         charts based on your data questions. It also helps your
                         drill down on the analysis.
                       </p>
-                      <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed w-[30%]">
+                      <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed md:w-[30%]">
                         Get Started
                       </div>
                     </div>
@@ -151,7 +151,7 @@ function Product1() {
               </div>
 
               <div className="mt-40">
-                <div className="flex">
+                <div className="flex flex-col-reverse md:flex-row">
                   <div className="flex-1 flex justify-center items-center">
                     <div>
                       <h2 className="text-3xl">
@@ -163,7 +163,7 @@ function Product1() {
                         with correct business logic. Easily manage your data
                         catalog & data dictionary.
                       </p>
-                      <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed w-[30%]">
+                      <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed md:w-[30%]">
                         Get Started
                       </div>
                     </div>
@@ -180,7 +180,7 @@ function Product1() {
               </div>
 
               <div className="mt-40">
-                <div className="flex">
+                <div className="flex flex-col-reverse md:flex-row">
                   <div className="flex-1 flex justify-center items-center">
                     <div>
                       <h2 className="text-3xl">
@@ -191,7 +191,7 @@ function Product1() {
                         editor allows you to create reports & dashboards easily,
                         turning raw data into actionable insights.
                       </p>
-                      <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed w-[30%]">
+                      <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed md:w-[30%]">
                         Get Started
                       </div>
                     </div>
@@ -356,7 +356,7 @@ function Product1() {
             {/* Section Container */}
             <div className="global-container">
               {/*Blog section */}
-              <div className="grid grid-cols-3 gap-2">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
                 {filteredBlogs?.slice(0, 3).map((el, index) => {
                   return (
                     <div
