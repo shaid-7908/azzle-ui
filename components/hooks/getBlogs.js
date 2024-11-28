@@ -14,3 +14,9 @@ export function getBlogMetadata() {
   const fileContents = fs.readFileSync(dataPath, "utf8");
   return JSON.parse(fileContents);
 }
+
+export function getBlogByCatagory(catagory){
+  const dataPath = path.join(process.cwd(), "public", "blogdetails.json");
+  const fileContents = fs.readFileSync(dataPath, "utf8");
+  return JSON.parse(fileContents);
+}

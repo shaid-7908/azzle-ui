@@ -31,6 +31,7 @@ module.exports = {
         spaceGrotesk: ["var(--font-space-grotesk)", "sans-serif"],
         body: ["Inter", "sans-serif"],
         outfit: ["var(--font-outfit)", "sans-serif"],
+        lora: ["var(--font-lora)", "serif"],
       },
 
       colors: {

@@ -1,6 +1,6 @@
 # Revolutionize Patient Care with AI-Powered Data Extraction and Predictive Insights for Healthcare
 
-![image hero](../blog-image/blog-5/blog-5-hero.png)
+![image hero](../blog-image/blog-5/blog-5-dash.png)
 
 Our advanced AI platform is designed for healthcare providers to streamline the extraction of critical insights from unstructured clinical notes, such as nurse notes, and automate essential workflows. Whether you’re a large healthcare organization or an SME clinic, our solution empowers medical teams to transform raw clinical data into actionable insights, improving patient outcomes and operational efficiency.
 
@@ -17,7 +17,7 @@ Our advanced AI platform is designed for healthcare providers to streamline the 
   >Leverage generative AI to identify critical details within nurse notes, treatment records, and other unstructured data sources. The platform’s smart extraction technology saves time and ensures relevant information is instantly accessible, reducing manual review efforts and allowing clinicians to focus on patient care.
 
 - **Risk Assessment & Coding Automation**
-  >Ensure accurate patient risk adjustment and HCC coding for Medicare by automating data categorization and risk scoring from clinical documentation. Our AI solution aligns with regulatory standards, helping healthcare providers meet compliance requirements with less effort and higher accuracy.![image 2](../blog-image/blog-5/blog-5-p2.png)
+  >Ensure accurate patient risk adjustment and HCC coding for Medicare by automating data categorization and risk scoring from clinical documentation. Our AI solution aligns with regulatory standards, helping healthcare providers meet compliance requirements with less effort and higher accuracy.![image 2](../blog-image/blog-5/blog-5-p5.png)
 
 - **Predictive Models for Clinical Decisions**
   >Transform extracted insights into predictive analytics for informed clinical decision-making. With the AI platform’s ability to create models based on real-time data, healthcare teams gain predictive power for areas such as patient deterioration risk and chronic disease management, ultimately enabling proactive care.![image 3](../blog-image/blog-5/blog-5-p3.png)

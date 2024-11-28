@@ -2,7 +2,7 @@
 
 Experience transformative investment management with our AI-Powered Portfolio Manager tailored for the private equity sector. This robust solution enables firms to harness 360° insights, automate complex reporting, and enhance decision-making with customizable, AI-driven applications. Designed for enterprises and SMEs, this platform streamlines oversight and simplifies data handling for both general and limited partners, supporting seamless integration and powerful analytics.
 
-![image hero](../blog-image/blog-7/blog-7-hero.png)
+![image hero](../blog-image/blog-7/blog-7-dash.png)
 
 ### Overview
 Our AI-Powered Portfolio Manager for Private Equity is an advanced solution built to unify disparate data sources into a cohesive, private equity-focused framework. The platform consolidates CRMs, financial databases like Preqin, third-party resources, and open-source data to ensure a single, streamlined view of portfolio health and performance.

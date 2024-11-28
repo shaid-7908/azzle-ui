@@ -1,8 +1,8 @@
 # AI-Powered Patient Insights and Automated Workflow Solutions for Case Management in Healthcare
 
-![image hero](../blog-image/blog-4/blog-4-hero.png)
+![image hero](../blog-image/blog-4/blog-4-dash.png)
 Harnessing the power of AI, our platform brings together a seamless solution for healthcare providers to optimize patient chart reviews and automate complex workflow tasks. Designed for both large healthcare enterprises and SME clinics, this platform helps case managers effortlessly review clinical data, extract essential insights, and create high-quality, compliant utilization reviews. With features that enhance understanding and efficiency, our platform empowers healthcare teams to deliver informed, patient-centric care.
-
+![image 4](../blog-image/blog-4/blog-4-dash-2.png)
 
 
 ## Features
@@ -20,3 +20,4 @@ Harnessing the power of AI, our platform brings together a seamless solution for
 
 5. **Utilization Review Drafting**
    >AI-assisted note composition helps case managers craft comprehensive, high-quality utilization review notes that highlight the most pertinent details of the patient's chart. The generated notes are easily customizable and ready for verification, reducing the time and effort required for insurance submissions.![image 3](../blog-image/blog-4/blog-4-p3.png)
+

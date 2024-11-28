@@ -2,15 +2,26 @@
 import Header_01 from "@/components/header/Header_01";
 import Footer_01 from "@/components/footer/Footer_01";
 import Link from "next/link";
-import React, { useRef } from "react";
+import React from "react";
 import Image from "next/image";
 import useAccordion from "@/components/hooks/useAccordion";
 import useTabs from "@/components/hooks/useTabs";
-
+import data from "../blogData.json";
+import { useEffect, useState } from "react";
 function Product1() {
   const [activeIndex, handleAccordion] = useAccordion(0);
 
   const [activeTab, handleTab] = useTabs();
+  const [filteredBlogs, setFilteredBlogs] = useState([]);
+  useEffect(() => {
+    const filteredData = () => {
+      const filtered = data.filter((item) => item.catagory.includes("health"));
+      setFilteredBlogs(filtered);
+    };
+    filteredData()
+  }, []);
+  
+  
   return (
     <>
       <Header_01 />
@@ -22,7 +33,7 @@ function Product1() {
             {/* Section Container */}
             <div className="global-container">
               <div className="breadcrumb-block">
-                <h1 className="breadcrumb-title">Healthcare</h1>
+                <h1 className="breadcrumb-title">Healthcare </h1>
                 <ul className="breadcrumb-nav">
                   <li>
                     <Link href="/">Home</Link>
@@ -338,6 +349,60 @@ function Product1() {
           </div>
           {/* Section Spacer */}
         </section>
+
+        <section>
+          {/* Section Spacer */}
+          <div className="pb-20 xl:pb-[150px]">
+            {/* Section Container */}
+            <div className="global-container">
+              {/*Blog section */}
+              <div className="grid grid-cols-3 gap-2">
+                {filteredBlogs?.slice(0, 3).map((el, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]"
+                    >
+                      <Link
+                        href={`/blog/${el.filename}`}
+                        className="block overflow-hidden"
+                      >
+                        <Image
+                          src={el.image}
+                          style={{ objectFit: "contain" }}
+                          alt="blog-main-1"
+                          width={856}
+                          height={540}
+                          className="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
+                        />
+                      </Link>
+                      <div className="border border-[#EAEDF0] p-[30px]">
+                        <h5 className="mb-3 mt-7 text-xl tracking-wide hover:text-colorOrangyRed">
+                          <Link href={`/blog/${el.filename}`}>{el.title}</Link>
+                        </h5>
+                        <p className="mb-7 line-clamp-2 last:mb-0">
+                          {el.description}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              {/*Blog section */}
+              <div className="flex justify-center items-center my-4">
+                <Link
+                  href="/blog"
+                  className="button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
+                >
+                  Read More
+                </Link>
+              </div>
+            </div>
+            {/* Section Container */}
+          </div>
+          {/* Section Spacer */}
+        </section>
+
         {/*...::: FAQ Section End :::... */}
         {/*...::: FAQ Section End :::... */}
       </main>

@@ -2,7 +2,7 @@
 
 Effortlessly streamline hospital appeals by automating claims analysis, evidence extraction from patient charts, and drafting appeal letters tailored to insurance guidelines. Designed for hospitals to reduce claim denials, Workmate brings intelligent automation to healthcare workflows.
 
-![image hero](../blog-image/blog-3/blog-3-hero.png)
+![image hero](../blog-image/blog-3/blog-3-dash.png)
 
 ### Overview
 
