@@ -133,7 +133,10 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                 <Link href="/insurance">Insurance</Link>
               </li>
               <li className="sub-menu--item">
-                <Link href="/Banking">Banking</Link>
+                <Link href="/banking">Banking</Link>
+              </li>
+              <li className="sub-menu--item">
+                <Link href="/sales">Sales & Marketing</Link>
               </li>
             </ul>
           </li>
@@ -204,11 +207,9 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                   <li className="sub-menu--item">
                     <Link href="/blog">blogs</Link>
                   </li>
-                 
                 </ul>
               </li>
-              
-              
+
               <li
                 onClick={(e) => handleSubMenuSub(e, 4)}
                 className="sub-menu--item nav-item-has-children"

@@ -136,6 +136,32 @@
   "description":"Workmate's Entity Resolution Framework empowers organizations to identify, compare, and resolve similar entities such as persons, organizations, and products. By leveraging cutting-edge ML frameworks and customizable tools, it streamlines data cleaning, pairing, and comparison to deliver unmatched precision and scalability. Its user-friendly interfaces and out-of-the-box capabilities simplify deployment while supporting advanced customization to meet unique business needs."
 
 },
+{
+  "id":18,
+  "title":"Workmate: AI-Powered Marketing Campaign Optimization",
+  "filename":"Marketing-ai",
+  "description":"Revolutionize your marketing campaigns with Workmate – the ultimate tool for creating, monitoring, and optimizing performance using AI-driven insights and real-time feedback metrics from multiple sources.",
+  "image":"/blog-image/blog-18/blog-18-dash.png",
+  "catagory":["sales"]
+
+},
+{
+"id":19,
+"title":"Workmate: Smart Lead Triage & Management",
+"image":"/blog-image/blog-19/blog-19-dash.png",
+"filename":"Leads-management",
+"description":"Streamline your inbound lead process with Workmate. From automatic lead enrichment and prioritization to seamless CRM integration, Workmate simplifies lead management, ensuring your team spends less time on admin and more time converting leads into customers.",
+"catagory":["sales"]
+},
+{
+  "id":20,
+  "title":"Workmate: AI-Driven Customer Service Engine",
+  "description":"Elevate customer service experiences with Workmate. By integrating consumer and sales data, Workmate empowers teams to deliver tailored solutions through AI-assisted communication, actionable insights, and a dynamic, evolving knowledge base. Streamline operations, enhance engagement, and optimize customer satisfaction with next-best-action guidance for every interaction.",
+  "catagory":["sales"],
+  "filename":"Customer-service-engine",
+  "image":"/blog-image/blog-20/blog-20-dash.png"
+
+},
 
   {
     "id": 169,
