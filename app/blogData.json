@@ -90,6 +90,55 @@
   },
   {
     "id": 12,
+    "filename": "Claim-coverage-engine",
+    "title": "Workmate Claims Coverage Engine: Revolutionizing Insurance Claim Assessments",
+    "catagory": ["insurance"],
+    "image": "/blog-image/blog-12/blog-12-dash.png",
+    "description": "Boost claim processing efficiency and customer satisfaction with the Workmate Claims Coverage Engine. Powered by cutting-edge multimodal AI, Workmate streamlines insurance claim evaluations by comparing claims against customizable coverage conditions. Its dynamic reporting, ethical AI guardrails, and natural language adaptability ensure accuracy, transparency, and compliance with evolving regulations. Optimize operations, reduce costs, and deliver faster, more consistent claim outcomes with Workmate—the ultimate tool for modern insurance providers."
+  },
+  {
+    "id": 13,
+    "filename": "Property-insurance-assistance",
+    "image": "/blog-image/blog-13/blog-13-dash.png",
+    "title": "Workmate Property Insurance Underwriting Assistant: Smarter, Faster, and More Accurate Underwriting",
+    "catagory": ["insurance"],
+    "description": "Transform the underwriting process with Workmate's AI-powered assistant. Extract critical data, flag risks, and ensure compliance effortlessly while enabling underwriters to make informed decisions quickly. With seamless integration of external data sources and Human-In-The-Loop validation, Workmate combines automation and expertise to elevate underwriting accuracy and efficiency."
+  },
+  {
+    "id": 14,
+    "filename": "Protfolio-risk-trends",
+    "image": "/blog-image/blog-14/blog-14-dash.png",
+    "title": "Workmate: Portfolio Risk Trends & Management",
+    "catagory": ["insurance"],
+    "description": "Workmate is an advanced tool designed to empower portfolio managers with granular and macro-level insights. It enables detailed analysis of portfolio performance, seamlessly integrates external data sources like news, industry reports, and internal notes, and equips managers to contextualize macro events and optimize portfolio strategies effectively."
+  },
+  {
+    "id":15,
+    "filename":"Contract-optimization",
+    "image":"/blog-image/blog-15/blog-15-dash.png",
+    "title":"Workmate: Contract Optimization & Compliance",
+    "catagory":["banking"],
+    "description":"Workmate revolutionizes contract management by empowering negotiation teams with tools to analyze, compare, and optimize contracts. By uncovering shortcomings and identifying strategic opportunities, Workmate ensures alignment with organizational objectives. Its robust features streamline version analysis, issue identification, and clause customization, adapting seamlessly to any contract type."
+  },
+  {
+    "id":16,
+    "filename":"Vison-rfp",
+    "image":"/blog-image/blog-16/blog-16-dash.png",
+    "title":"Workmate: Vision for RFPs & DDQs",
+    "catagory":["banking"],
+    "description":"Workmate revolutionizes the management of Due Diligence Questionnaires (DDQs) and Request for Proposals (RFPs) by automating response generation, enhancing compliance, and streamlining communication. With advanced retrieval-augmented generation and customizable workflows, Workmate empowers teams to efficiently craft, review, and finalize responses with full transparency and legal assurance."
+  },
+  {"id":17,
+  "filename":"Entity-resolution",
+  "image":"/blog-image/blog-17/blog-17-dash.png",
+  "title":"Workmate: Advanced Entity Resolution Framework",
+  "catagory":["banking"],
+  "description":"Workmate's Entity Resolution Framework empowers organizations to identify, compare, and resolve similar entities such as persons, organizations, and products. By leveraging cutting-edge ML frameworks and customizable tools, it streamlines data cleaning, pairing, and comparison to deliver unmatched precision and scalability. Its user-friendly interfaces and out-of-the-box capabilities simplify deployment while supporting advanced customization to meet unique business needs."
+
+},
+
+  {
+    "id": 169,
     "filename": "Inventory-Management",
     "image": "/blog-image/blog-12/blog-12-hero.svg",
     "catagory": [],

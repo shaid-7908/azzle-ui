@@ -1,344 +1,492 @@
-'use client';
-import React, { useState, useRef, useEffect } from 'react';
-import Header_01 from '@/components/header/Header_01';
-import { MdArrowOutward } from "react-icons/md";
+"use client";
+import React, { useState, useRef, useEffect } from "react";
+import Header_01 from "@/components/header/Header_01";
+import useAccordion from "@/components/hooks/useAccordion";
 import { useInView } from "react-intersection-observer";
-import Image from 'next/image';
-import { GoArrowUpRight } from "react-icons/go";
-import { FaWandMagicSparkles } from "react-icons/fa6";
-import { TbSettingsAutomation } from "react-icons/tb";
-import Footer_01 from '@/components/footer/Footer_01';
-const sections = [
-  {
-    id: 1,
-    title: "STEP 1",
-    header: "Pick your apps and websites",
-    content: "Use data and events in one app to automate another. Bardeen supports an increasing library of powerful integrations.",
-    image: "https://cdn.prod.website-files.com/65783c6f78101d143ba11f08/659fed78467d25d340720bc1_Frame%20427322001.svg",
-  },
-  {
-    id: 2,
-    title: "STEP 2",
-    header: "Perform tasks and actions",
-    content: "Bardeen completes tasks in apps and websites you use for work, so you don't have to - filling forms, sending messages, or even crafting detailed reports.",
-    image: "https://cdn.prod.website-files.com/65783c6f78101d143ba11f08/659fed780247e517443c666f_Frame%20427322002.svg",
-  },
-  {
-    id: 3,
-    title: "STEP 3",
-    header: "Combine it all to create workflows",
-    content: "Workflows are a series of actions triggered by you or a change in a connected app. They automate repetitive tasks you normally perform manually - saving you time.",
-    image: "https://cdn.prod.website-files.com/65783c6f78101d143ba11f08/659fed78b563f3f915c236f8_Frame%20427322003.svg",
-  },
-];
+import Image from "next/image";
+import Link from "next/link";
+import Footer_01 from "@/components/footer/Footer_01";
 
 function WorkmateTeams() {
-  const [activeSection, setActiveSection] = useState(sections[0].id);
-  const scrollFRef = useRef(null);
-
-  const handleInViewChange = (inView, id) => {
-    if (inView) {
-      setActiveSection(id);
-    }
-  };
-
-  const handleScroll = () => {
-    const scrollF = scrollFRef.current;
-    if (scrollF.scrollTop + scrollF.clientHeight >= scrollF.scrollHeight) {
-      // Content fully scrolled, scroll out the entire div.
-      scrollF.style.overflowY = 'visible';
-    } else {
-      scrollF.style.overflowY = 'hidden';
-    }
-  };
-
-  useEffect(() => {
-    const scrollF = scrollFRef.current;
-    scrollF.addEventListener('scroll', handleScroll);
-
-    return () => {
-      scrollF.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
+  const [activeIndex, handleAccordion] = useAccordion(0);
   return (
     <>
       <Header_01 />
-      <main className='mb-[100px]'>
-        <section className="w-screen h-screen flex justify-center items-center">
-          <div className="text-center">
-            <span className="uppercase tracking-[4px] font-outfit font-[700] text-[13px] leading-[26px]">
-              How does Bardeen work?
-            </span>
-            <h1 className="font-outfit text-[64px] leading-[74px] font-[500] text-[#3b3c41]">
-              Workflow automation <br />
-              made simple
-            </h1>
-            <p className="font-outfit text-[20px] leading-[30px] font-[400] mt-[50px]">
-              Bardeen&apos;s proactive automation platform empowers you to
-              discover,
-              <br /> set up, and run workflows that put your work on autopilot.
-            </p>
-            <div className="p-2 flex justify-center items-center mt-4">
-              <div className="rounded-2xl bg-[#6f60cc] flex py-2 px-4 font-body font-[400] text-[18px] leading-[26px] justify-center items-center text-white">
-                Get Started for free <MdArrowOutward />
+      <main className="mb-[100px]">
+        {/*...::Breadcrum section::..... */}
+        <section id="section-breadcrumb">
+          {/* Section Spacer */}
+          <div className="breadcrumb-wrapper">
+            {/* Section Container */}
+            <div className="global-container">
+              <div className="breadcrumb-block">
+                <h1 className="breadcrumb-title">Work Teams</h1>
+                <ul className="breadcrumb-nav">
+                  <li>
+                    <Link href="/">Home</Link>
+                  </li>
+                  <li>Work Teams</li>
+                </ul>
               </div>
             </div>
-            <span className="font-body text-[14px] leading-[22px] font-[400] text-[#6f60cc]">
-              The #1 AI Automation extension for Chrome
-            </span>
+            {/* Section Container */}
           </div>
+          {/* Section Spacer */}
         </section>
-
-        <div
-          id="scroll-f"
-          ref={scrollFRef}
-          style={{
-            display: "flex",
-            height: "100vh",
-            overflowY: "hidden", // Hide overflow initially
-          }}
-        >
-          {/* Left Side */}
-          <div
-            style={{
-              flex: "50%",
-              overflowY: "scroll",
-              height: "100vh",
-              scrollbarWidth: "none",
-              msOverflowStyle: "none",
-            }}
-          >
-            {sections.map((section) => (
-              <Section
-                key={section.id}
-                id={section.id}
-                onInViewChange={handleInViewChange}
-                title={section.title}
-                header={section.header}
-                content={section.content}
-              />
-            ))}
-          </div>
-
-          {/* Right Side */}
-          <div
-            style={{
-              flex: "50%",
-              height: "100vh",
-              overflowY: "scroll",
-              scrollbarWidth: "none", // Optional: Hide scrollbar (for Firefox)
-              msOverflowStyle: "none", // Optional: Hide scrollbar (for IE/Edge)
-            }}
-          >
-            <div
-              style={{
-                position: "sticky",
-                top: 0,
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                height: "100vh",
-              }}
-            >
-              {sections.map((section) => (
+        {/*...::First Hero section::... */}
+        {/*...WorkmateTeams Hero */}
+        <section id="workmate-teams">
+          <div className="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px]  pb-20  lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24  xxl:pb-[133px] ">
+            <div className="global-container ">
+              <div className="grid grid-cols-1 items-center gap-12 mt-[100px] md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
+                {/* Content Left Block */}
                 <div
-                  key={section.id}
-                  style={{
-                    opacity: section.id === activeSection ? 1 : 0,
-                    transition: "opacity 0.5s ease-in-out",
-                    position: "absolute",
-                    width: "100%",
-                  }}
+                  className="jos order-2 overflow-hidden rounded-md"
+                  data-jos_animation="fade-left"
                 >
                   <Image
-                    src={section.image}
-                    alt={section.id}
-                    width={529}
-                    height={529}
+                    src="/assets/workmate-teams/h3.png"
+                    alt="content-image-2"
+                    width="526"
+                    height="450"
+                    className="h-auto w-full"
                   />
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
+                {/* Content Left Block */}
+                {/* Content Right Block */}
+                <div className="jos order-1" data-jos_animation="fade-right">
+                  {/* Section Content Block */}
+                  <div className="mb-6">
+                    <h2>
+                      Revolutionize Your Workflows with AI-Driven Automation
+                    </h2>
+                  </div>
+                  {/* Section Content Block */}
+                  <div className="text-lg leading-[1.4] lg:text-[21px]">
+                    <p className="mb-7 last:mb-0">
+                      Experience the power of an intelligent automation platform
+                      that combines data analytics, AI-driven insights, and
+                      dynamic action to create smart workflows tailored to your
+                      industry. Unlock unprecedented efficiency, scalability,
+                      and precision with a solution designed for niche
+                      industries.
+                    </p>
+                  </div>
+                </div>
+                {/* Content Right Block */}
+              </div>
 
-        <section className="flex justify-center mt-[40px] h-[20vh]">
-          <div className="w-[85%]">
-            <h2 className="text-[32px] leading-[38px] font-[500] font-outfit my-2">
-              How do I build workflows?
-            </h2>
-            <p className="font-[400] text-[#3b3c41] text-[20px] leading-[30px] font-outfit my-2">
-              There are multiple ways to set up Bardeen. Start with our library
-              of pre-built workflows, build your own, or let our AI suggest
-              <br /> ways to save time.
-            </p>
-          </div>
-        </section>
-        <section className="flex justify-center h-[40vh]">
-          <div className="w-[85%] flex justify-between">
-            <div className="flex-1 bg-gradient-to-r hover:text-[#ff807b] hover:bg-white from-blue-50 to-white flex flex-col items-start justify-center text-[#6f60cc] p-2 mr-4 my-4 rounded-md border-[1px] border-[#e8eaed]">
-              <div className="text-4xl my-2">
-                <GoArrowUpRight />
-              </div>
-              <div className="text-[26px] leading-[26px] font-[700] font-outfit">
-                Pre-built workflows
-              </div>
-              <div className="text-[16px] leading-[26px] font-[500] font-outfit">
-                Hundreds of pre-built automations created by experts. Find
-                workflows for sales, recruiting, productivity, and more.
-              </div>
-            </div>
-            <div className="flex-1 hover:text-[#ff807b] hover:bg-white bg-gradient-to-r from-blue-50 to-white flex flex-col items-start justify-center text-[#6f60cc] p-2 m-4 rounded-md border-[1px] border-[#e8eaed]">
-              <div className="text-3xl my-2">
-                <FaWandMagicSparkles />
-              </div>
-              <div className="text-[26px] leading-[26px] font-[700] font-outfit">
-                Magic box
-              </div>
-              <div className="text-[16px] leading-[26px] font-[500] font-outfit">
-                Use natural language to create automations - just type it in to
-                the Magic Box and watch Bardeen build the automation for you.
-              </div>
-            </div>
-            <div className="flex-1 hover:text-[#ff807b] hover:bg-white flex flex-col items-start justify-center p-2 m-4 text-[#6f60cc] bg-gradient-to-r from-blue-50 to-white rounded-md border-[1px] border-[#e8eaed]">
-              <div className="text-4xl">
-                <TbSettingsAutomation />
-              </div>
-              <div className="text-[26px] leading-[26px] font-[700] font-outfit">
-                Proactive Automation Assistance
-              </div>
-              <div className="text-[16px] leading-[26px] font-[500] font-outfit">
-                Bardeen learns from your actions to proactively create
-                automations that match your exact work process.
+              <div className="grid grid-cols-1 items-center gap-12 mt-[100px] md:grid-cols-2 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 xxl:gap-32">
+                {/* Content Left Block */}
+                <div
+                  className="jos order-2 overflow-hidden rounded-md"
+                  data-jos_animation="fade-left"
+                >
+                  <Image
+                    src="/assets/workmate-teams/h2.png"
+                    alt="content-image-2"
+                    width="526"
+                    height="450"
+                    className="h-auto w-full"
+                  />
+                </div>
+                {/* Content Left Block */}
+                {/* Content Right Block */}
+                <div className="jos order-1" data-jos_animation="fade-right">
+                  {/* Section Content Block */}
+                  <div className="mb-6">
+                    <h2>Why Choose Our Platform?</h2>
+                  </div>
+                  {/* Section Content Block */}
+                  <div className="text-lg leading-[1.4] lg:text-[21px]">
+                    <p className="mb-7 last:mb-0">
+                      In today’s fast-paced world, traditional workflows can no
+                      longer keep up with the complexity and demands of modern
+                      industries. Our AI-based automation platform goes beyond
+                      static processes by integrating real-time data analytics
+                      and adaptive automation to streamline operations, reduce
+                      costs, and empower decision-making.
+                    </p>
+                  </div>
+                </div>
+                {/* Content Right Block */}
               </div>
             </div>
           </div>
         </section>
-        <section className="h-[60vh] flex justify-center mt-[30vh]">
-          <div className="flex w-[85%]">
-            <div className="flex-1 ">
-              <div>
-                <h3 className="font-[500] text-[32px] leading-[37px] font-outfit text-[#3b3c41] my-4">
-                  What is Proactive Automation?
-                </h3>
-                <p className="font-[400] text-[18px] leading-[29px] w-[70%] font-outfit text-[#3b3c41] my-4">
-                  Automation tools of the past promise to save you time by
-                  automating repetitive work, but using them often takes longer
-                  than the work itself. You have to understand APIs, data
-                  structures, and even write code just to set them up.
-                </p>
-                <p className="font-[400] text-[18px] leading-[29px] w-[70%] font-outfit text-[#3b3c41] my-4">
-                  With proactive automation, building these workflows is
-                  automatic. Start by telling Bardeen what you want to automate
-                  - in everyday language. Over time Bardeen learns from the way
-                  you work to suggest ways to improve your productivity and
-                  impact.
-                </p>
+
+        {/*...::: Service Section Start :::... */}
+        <section id="section-service">
+          {/* Section Spacer */}
+          <div className="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
+            {/* Section Container */}
+            <div className="global-container">
+              {/* Section Content Block */}
+              <div className="jos mb-10 lg:mb-16 xl:mb-20">
+                <div className="md:max-w-sm lg:max-w-xl xl:max-w-[746px]">
+                  <h2>Core features that make us valuable</h2>
+                </div>
               </div>
+              {/* Section Content Block */}
+              {/* Service List */}
+              <ul className="jos grid grid-cols-1 gap-[2px] overflow-hidden rounded-[10px] border-2 border-black bg-black sm:grid-cols-2 lg:grid-cols-4">
+                {/* Service Item */}
+                <li className="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-colorOrangyRed">
+                  <div className="relative mb-9 h-[70px] w-[70px]">
+                    <Image
+                      src="/assets/img_placeholder/th-1/service-icon-black-1.svg"
+                      alt=""
+                      width="70"
+                      height="70"
+                    />
+                    <Image
+                      src="/assets/img_placeholder/th-1/service-icon-orange-1.svg"
+                      alt="service-icon-orange-1"
+                      width="70"
+                      height="70"
+                      className="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                    />
+                  </div>
+                  <h3 className="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                    <Link
+                      href="/service-details"
+                      className="hover:text-[#00b48d]"
+                    >
+                      AI-Driven Data Analytics
+                    </Link>
+                  </h3>
+
+                  <p className="mb-12 duration-300 group-hover:text-white">
+                    Harness the power of advanced data analytics to gain
+                    actionable insights.
+                  </p>
+
+                  <Link
+                    href="/service-details"
+                    className="relative inline-block h-[30px] w-[30px] duration-300"
+                  >
+                    <Image
+                      src="/assets/img_placeholder/th-1/arrow-right-black.svg"
+                      alt="arrow-right-black"
+                      width="30"
+                      height="30"
+                    />
+                    <Image
+                      src="/assets/img_placeholder/th-1/arrow-right-orange.svg"
+                      alt="arrow-right-black"
+                      width="30"
+                      height="30"
+                      className="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                    />
+                  </Link>
+                </li>
+                {/* Service Item */}
+                {/* Service Item */}
+                <li className="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-colorOrangyRed">
+                  <div className="relative mb-9 h-[70px] w-[70px]">
+                    <Image
+                      src="/assets/img_placeholder/th-1/service-icon-black-2.svg"
+                      alt="service-icon-black-2"
+                      width="70"
+                      height="70"
+                    />
+                    <Image
+                      src="/assets/img_placeholder/th-1/service-icon-orange-2.svg"
+                      alt="service-icon-orange-1"
+                      width="70"
+                      height="70"
+                      className="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                    />
+                  </div>
+
+                  <h3 className="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                    <Link
+                      href="/service-details"
+                      className="hover:text-[#00b48d]"
+                    >
+                      Smart Workflow Automation
+                    </Link>
+                  </h3>
+
+                  <p className="mb-12 duration-300 group-hover:text-white">
+                    Transform static processes into adaptive workflows that
+                    respond to changing conditions.
+                  </p>
+
+                  <Link
+                    href="/service-details"
+                    className="relative inline-block h-[30px] w-[30px] duration-300"
+                  >
+                    <Image
+                      src="/assets/img_placeholder/th-1/arrow-right-black.svg"
+                      alt="arrow-right-black"
+                      width="30"
+                      height="30"
+                    />
+                    <Image
+                      src="/assets/img_placeholder/th-1/arrow-right-orange.svg"
+                      alt="arrow-right-black"
+                      width="30"
+                      height="30"
+                      className="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                    />
+                  </Link>
+                  {/* Features Item */}
+                  {/* Features Item */}
+                </li>
+                {/* Service Item */}
+                {/* Service Item */}
+                <li className="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-colorOrangyRed">
+                  <div className="relative mb-9 h-[70px] w-[70px]">
+                    <Image
+                      src="/assets/img_placeholder/th-1/service-icon-black-3.svg"
+                      alt="service-icon-black-3"
+                      width="70"
+                      height="70"
+                    />
+                    <Image
+                      src="/assets/img_placeholder/th-1/service-icon-orange-3.svg"
+                      alt="service-icon-orange-3"
+                      width="70"
+                      height="70"
+                      className="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                    />
+                  </div>
+                  <h3 className="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                    <Link
+                      href="/service-details"
+                      className="hover:text-[#00b48d]"
+                    >
+                      Industry-Specific Solutions
+                    </Link>
+                  </h3>
+
+                  <p className="mb-12 duration-300 group-hover:text-white">
+                    Built for niche industries with unique challenges and
+                    workflows.
+                  </p>
+
+                  <Link
+                    href="/service-details"
+                    className="relative inline-block h-[30px] w-[30px] duration-300"
+                  >
+                    <Image
+                      src="/assets/img_placeholder/th-1/arrow-right-black.svg"
+                      alt="arrow-right-black"
+                      width="30"
+                      height="30"
+                    />
+                    <Image
+                      src="/assets/img_placeholder/th-1/arrow-right-orange.svg"
+                      alt="arrow-right-black"
+                      width="30"
+                      height="30"
+                      className="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                    />
+                  </Link>
+                </li>
+                {/* Service Item */}
+                {/* Service Item */}
+                <li className="group bg-white p-[30px] transition-all duration-300 ease-in-out hover:bg-colorOrangyRed">
+                  <div className="relative mb-9 h-[70px] w-[70px]">
+                    <Image
+                      src="/assets/img_placeholder/th-1/service-icon-black-4.svg"
+                      alt="service-icon-black-4"
+                      width="70"
+                      height="70"
+                    />
+                    <Image
+                      src="/assets/img_placeholder/th-1/service-icon-orange-4.svg"
+                      alt="service-icon-orange-4"
+                      width="70"
+                      height="70"
+                      className="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                    />
+                  </div>
+                  <h3 className="mb-4 block text-xl leading-tight -tracking-[0.5px] group-hover:text-white xl:text-2xl xxl:text-[28px]">
+                    <Link
+                      href="/service-details"
+                      className="hover:text-[#00b48d]"
+                    >
+                      Adaptive AI Actions
+                    </Link>
+                  </h3>
+
+                  <p className="mb-12 duration-300 group-hover:text-white">
+                    Move beyond static rule-based automation with dynamic
+                    AI-powered responses.
+                  </p>
+
+                  <Link
+                    href="/service-details"
+                    className="relative inline-block h-[30px] w-[30px] duration-300"
+                  >
+                    <Image
+                      src="/assets/img_placeholder/th-1/arrow-right-black.svg"
+                      alt="arrow-right-black"
+                      width="30"
+                      height="30"
+                    />
+                    <Image
+                      src="/assets/img_placeholder/th-1/arrow-right-orange.svg"
+                      alt="arrow-right-black"
+                      width="30"
+                      height="30"
+                      className="absolute left-0 top-0 h-full w-full opacity-0 transition-all duration-300 ease-linear group-hover:opacity-100"
+                    />
+                  </Link>
+                </li>
+                {/* Service Item */}
+              </ul>
+              {/* Service List */}
             </div>
-            <div className="flex-1">
-              <Image
-                src="/assets/img_placeholder/3714960.jpg"
-                alt={"na"}
-                width={529}
-                height={529}
-              />
-            </div>
+            {/* Section Container */}
           </div>
+          {/* Section Spacer */}
         </section>
-        <section className="h-[30vh] mt-[30vh] flex justify-center">
-          <div className="w-[85%] flex justify-between items-center">
-            <div className="font-[500] text-[32px] leading-[37px] font-outfit text-[#3b3c41]">
-              How do I install Bardeen?
+        {/*...::: FAQ Section Start :::... */}
+        <section className="faq-section">
+          {/* Section Spacer */}
+          <div className="pb-20 xl:pb-[150px]">
+            {/* Section Container */}
+            <div className="global-container">
+              <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2">
+                {/* FAQ Left Block */}
+                <div
+                  className="jos flex flex-col"
+                  data-jos_animation="fade-right"
+                >
+                  {/* Section Content Block */}
+                  <div className="mb-6">
+                    <div className="mx-auto md:mx-0 md:max-w-none">
+                      <h2>Freely ask us for more information</h2>
+                    </div>
+                  </div>
+                  {/* Section Content Block */}
+                  <div className="text-lg leading-[1.4] lg:text-[21px]">
+                    <p className="mb-7 last:mb-0">
+                      Our AI SaaS solutions can be quickly deployed, enabling
+                      users to start benefiting from AI capabilities without
+                      lengthy setup and development times in fast-paced
+                      industries.
+                    </p>
+                    <Link
+                      href="/faq-1"
+                      className="button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
+                    >
+                      Ask you questions
+                    </Link>
+                  </div>
+                </div>
+                {/* FAQ Left Block */}
+
+                {/* FAQ Right Block */}
+                <div
+                  className="jos md:ml-10 lg:ml-20 xl:ml-32"
+                  data-jos_animation="fade-left"
+                >
+                  {/* Accordion*/}
+                  <ul className="accordion">
+                    {/* Accordion items */}
+                    <li
+                      className={`accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0 ${
+                        activeIndex === 0 ? "active" : ""
+                      }`}
+                      onClick={() => handleAccordion(0)}
+                    >
+                      <div className="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                        <p>What is intelligent automation?</p>
+                        <div className="accordion-icon">
+                          <Image
+                            src="/assets/img_placeholder/plus.svg"
+                            width={24}
+                            height={24}
+                            alt="plus"
+                          />
+                        </div>
+                      </div>
+                      <div className="accordion-content text-[#2C2C2C]">
+                        <p>
+                          Intelligent automation combines advanced technologies,
+                          such as AI and machine learning, with automation to
+                          streamline processes, enhance decision-making, and
+                          improve overall efficiency within organizations.
+                        </p>
+                      </div>
+                    </li>
+                    {/* Accordion items */}
+                    {/* Accordion items */}
+                    <li
+                      className={`accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0 ${
+                        activeIndex === 1 ? "active" : ""
+                      }`}
+                      onClick={() => handleAccordion(1)}
+                    >
+                      <div className="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                        <p>How can your solution help improve collaboration?</p>
+                        <div className="accordion-icon">
+                          <Image
+                            src="/assets/img_placeholder/plus.svg"
+                            width={24}
+                            height={24}
+                            alt="plus"
+                          />
+                        </div>
+                      </div>
+                      <div className="accordion-content text-[#2C2C2C]">
+                        <p>
+                          Our solution enhances collaboration by providing
+                          AI-driven insights that keep teams aligned and focused
+                          on common goals, facilitating real-time communication
+                          and information sharing.
+                        </p>
+                      </div>
+                    </li>
+                    {/* Accordion items */}
+                    {/* Accordion items */}
+                    <li
+                      className={`accordion-item border-b-[1px] border-[#DBD6CF] pb-6 pt-6 first:pt-0 last:border-b-0 last:pb-0 ${
+                        activeIndex === 2 ? "active" : ""
+                      }`}
+                      onClick={() => handleAccordion(2)}
+                    >
+                      <div className="accordion-header flex items-center justify-between font-dmSans text-xl font-bold leading-[1.2] -tracking-[0.5px] text-black lg:text-[28px]">
+                        <p>
+                          Can I integrate your analytics solution with existing
+                          systems?
+                        </p>
+                        <div className="accordion-icon">
+                          <Image
+                            src="/assets/img_placeholder/plus.svg"
+                            width={24}
+                            height={24}
+                            alt="plus"
+                          />
+                        </div>
+                      </div>
+                      <div className="accordion-content text-[#2C2C2C]">
+                        <p>
+                          Yes, our solution is designed to seamlessly integrate
+                          with your existing tools and systems, enabling
+                          intelligent automation and ensuring a smooth workflow
+                          across your organization.
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+                  {/* Accordion*/}
+                </div>
+                {/* FAQ Right Block */}
+              </div>
             </div>
-            <div className="flex justify-center items-center border-[1px] hover:border-[#ff807b] hover:text-[#ff807b] border-[#a2a2a2] text-[#3b3c41] rounded-3xl p-4">
-              <span>Try Bardeen for Chrome</span>{" "}
-              <span>
-                <MdArrowOutward />
-              </span>
-            </div>
+            {/* Section Container */}
           </div>
-        </section>
-        <section className="flex justify-center items-center">
-          <div className="w-[85%] flex">
-            <div className="flex-1">
-              <Image
-                src="https://cdn.prod.website-files.com/662fbf69a72889ec66f07685/662fbf69a72889ec66f07ef3_Frame%20427321894.svg"
-                alt="na"
-                width={529}
-                height={529}
-              />
-            </div>
-            <div className="flex-1">
-              <div className="p-4 border-l-[1px] border-blue-400 mt-[60px] hover:text-[#ff807b] text-[#3b3c41]">
-                <h4 className="font-[600] my-2 text-[26px] leading-[26px] font-outfit">
-                  Get the chrome extension
-                </h4>
-                <p className="font-[400] text-[20px] w-[80%]  leading-[26px] font-outfit">
-                  It only takes a minute to install the extension to your
-                  browser. Your private information is secure and never leaves
-                  your machine.
-                </p>
-              </div>
-              <div className="p-4">
-                <h4 className="font-[600] text-[26px] hover:text-[#ff807b] text-[#3b3c41] leading-[26px] font-outfit">
-                  Discover your workflow
-                </h4>
-              </div>
-              <div className="p-4">
-                <h4 className="font-[600] hover:text-[#ff807b] text-[#3b3c41] text-[26px] leading-[26px] font-outfit">
-                  Configure and Customize
-                </h4>
-              </div>
-              <div className="p-4">
-                <h4 className="font-[600] text-[26px] hover:text-[#ff807b] text-[#3b3c41] leading-[26px] font-outfit">
-                  Run anytime, when you sleep
-                </h4>
-              </div>
-            </div>
-          </div>
+          {/* Section Spacer */}
         </section>
       </main>
-      <Footer_01/>
+      <Footer_01 />
     </>
   );
 }
-
-const Section = ({ id, title,header,content, onInViewChange }) => {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-    triggerOnce: false,
-  });
-
-  React.useEffect(() => {
-    onInViewChange(inView, id);
-  }, [inView, id, onInViewChange]);
-
-  return (
-    <div
-      ref={ref}
-      style={{
-        height: "100vh",
-        padding: "20px",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <div className="w-[70%]">
-        <span className="font-outfit text-[13px] leading-[26px] font-[700] tracking-[4px]">
-          {title}
-        </span>
-        <h3 className="font-outfit text-[42px] leading-[48px] font-[500]">
-          {header}
-        </h3>
-        <p className="font-outfit text-[#3b3c41] text-[18px] leading-[29px] font-[400] my-2">
-          {content}
-        </p>
-      </div>
-    </div>
-  );
-};
 
 export default WorkmateTeams;

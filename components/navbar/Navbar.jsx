@@ -71,10 +71,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
         </div>
         <ul className={`site-menu-main ${color}`}>
           {/* Global navbar */}
-          <li
-            
-            className="nav-item nav-item-has-children"
-          >
+          <li className="nav-item nav-item-has-children">
             <Link href="/" className="nav-link-item ">
               Home
               {/* <Image
@@ -132,6 +129,12 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
               <li className="sub-menu--item">
                 <Link href="/finance">Finance</Link>
               </li>
+              <li className="sub-menu--item">
+                <Link href="/insurance">Insurance</Link>
+              </li>
+              <li className="sub-menu--item">
+                <Link href="/Banking">Banking</Link>
+              </li>
             </ul>
           </li>
           <li
@@ -155,7 +158,9 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
               <li className="sub-menu--item">
                 <Link href="/workmate">Workmate</Link>
               </li>
-              
+              <li className="sub-menu--item">
+                <Link href="/workmateteams">Work Teams</Link>
+              </li>
             </ul>
           </li>
           <li
@@ -199,67 +204,11 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                   <li className="sub-menu--item">
                     <Link href="/blog">blogs</Link>
                   </li>
-                  <li className="sub-menu--item">
-                    <Link href="/blog-details">blog details</Link>
-                  </li>
+                 
                 </ul>
               </li>
-              <li
-                onClick={(e) => handleSubMenuSub(e, 2)}
-                className="sub-menu--item nav-item-has-children"
-              >
-                <Link href="#" data-menu-get="h3" className="drop-trigger">
-                  Team
-                  <Image
-                    className="dropdown-icon"
-                    src="/assets/img_placeholder/icon-black-cheveron-right.svg"
-                    alt="cheveron-right"
-                    width={16}
-                    height={16}
-                  />
-                </Link>
-                <ul
-                  className={`sub-menu shape-none ${
-                    mobileSubMenuSub === 2 && "active"
-                  }`}
-                  id="submenu-5"
-                >
-                  <li className="sub-menu--item">
-                    <Link href="/team">Teams</Link>
-                  </li>
-                  <li className="sub-menu--item">
-                    <Link href="/team-details">Teams Details</Link>
-                  </li>
-                </ul>
-              </li>
-              <li
-                onClick={(e) => handleSubMenuSub(e, 3)}
-                className="sub-menu--item nav-item-has-children"
-              >
-                <Link href="#" data-menu-get="h3" className="drop-trigger">
-                  FAQ
-                  <Image
-                    className="dropdown-icon"
-                    src="/assets/img_placeholder/icon-black-cheveron-right.svg"
-                    alt="cheveron-right"
-                    width={16}
-                    height={16}
-                  />
-                </Link>
-                <ul
-                  className={`sub-menu shape-none ${
-                    mobileSubMenuSub === 3 && "active"
-                  }`}
-                  id="submenu-6"
-                >
-                  <li className="sub-menu--item">
-                    <Link href="/faq-1">FAQ-1</Link>
-                  </li>
-                  <li className="sub-menu--item">
-                    <Link href="/faq-2">FAQ-2</Link>
-                  </li>
-                </ul>
-              </li>
+              
+              
               <li
                 onClick={(e) => handleSubMenuSub(e, 4)}
                 className="sub-menu--item nav-item-has-children"
