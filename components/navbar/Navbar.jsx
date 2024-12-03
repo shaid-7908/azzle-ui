@@ -219,34 +219,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                 </ul>
               </li>
 
-              <li
-                onClick={(e) => handleSubMenuSub(e, 4)}
-                className="sub-menu--item nav-item-has-children"
-              >
-                <Link href="#" data-menu-get="h3" className="drop-trigger">
-                  Portfolio
-                  <Image
-                    className="dropdown-icon"
-                    src="/assets/img_placeholder/icon-black-cheveron-right.svg"
-                    alt="cheveron-right"
-                    width={16}
-                    height={16}
-                  />
-                </Link>
-                <ul
-                  className={`sub-menu shape-none ${
-                    mobileSubMenuSub === 4 && "active"
-                  }`}
-                  id="submenu-7"
-                >
-                  <li className="sub-menu--item">
-                    <Link href="/portfolio">Portfolio</Link>
-                  </li>
-                  <li className="sub-menu--item">
-                    <Link href="/portfolio-details">Portfolio Details</Link>
-                  </li>
-                </ul>
-              </li>
+             
               <li className="sub-menu--item">
                 <Link
                   href="/pricing"
@@ -256,40 +229,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                   Pricing
                 </Link>
               </li>
-              <li
-                onClick={(e) => handleSubMenuSub(e, 5)}
-                className="sub-menu--item nav-item-has-children"
-              >
-                <Link href="#" data-menu-get="h3" className="drop-trigger">
-                  Utilities
-                  <Image
-                    className="dropdown-icon"
-                    src="/assets/img_placeholder/icon-black-cheveron-right.svg"
-                    alt="cheveron-right"
-                    width={16}
-                    height={16}
-                  />
-                </Link>
-                <ul
-                  className={`sub-menu shape-none ${
-                    mobileSubMenuSub === 5 && "active"
-                  }`}
-                  id="submenu-8"
-                >
-                  <li className="sub-menu--item">
-                    <Link href="/not-found">404 Not Found</Link>
-                  </li>
-                  <li className="sub-menu--item">
-                    <Link href="/login">Login</Link>
-                  </li>
-                  <li className="sub-menu--item">
-                    <Link href="/signup">Signup</Link>
-                  </li>
-                  <li className="sub-menu--item">
-                    <Link href="/reset-password">Reset Password</Link>
-                  </li>
-                </ul>
-              </li>
+              
             </ul>
           </li>
           <li className="nav-item">
