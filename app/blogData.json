@@ -162,6 +162,22 @@
   "image":"/blog-image/blog-20/blog-20-dash.png"
 
 },
+{
+"id":21,
+"filename":"Material-shortage-manager",
+"title":"Workmate: AI-Driven Material Shortage Management",
+"image":"/blog-image/blog-21/blog-21-dash.png",
+"description":"Workmate empowers logistics teams to proactively tackle material shortages with a global perspective. From identifying out-of-stock risks to simulating solutions and enabling seamless team collaboration, Workmate optimizes decision-making with actionable insights and best practices to keep your operations running smoothly.",
+"catagory":["logistics"]
+},
+{
+"id":22,
+"filename":"Material-switch",
+"catagory":["logistics"],
+"title":"Workmate: Intelligent Material Substitution for Smarter Procurement",
+"image":"/blog-image/blog-22/blog-22-dash.png",
+"description":"Workmate empowers procurement teams to quickly identify alternative materials and make informed decisions without compromising production quality. By harmonizing material descriptions and utilizing AI-driven reconciliation and buyer prioritization, Workmate streamlines material sourcing, saving both time and costs. With Workmate, teams can focus on what matters most—maintaining smooth production flows while optimizing resources."
+},
 
   {
     "id": 169,
