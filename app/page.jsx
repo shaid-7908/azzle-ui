@@ -306,6 +306,40 @@ function Home() {
                 {/* Service Item */}
               </ul>
               {/* Service List */}
+              <div className="jos mb-10 lg:mb-16 my-10 xl:mb-20">
+                <div className="md:max-w-sm lg:max-w-xl xl:max-w-[746px]">
+                  <h2>Choices we provide</h2>
+                </div>
+              </div>
+              <div className=" mt-9 grid grid-cols-1 md:grid-cols-3 gap-4 ">
+                <div className="   unique-shadow">
+                  <div className="bg-black text-white  text-3xl font-bold text-center p-5 my-8">
+                    Public LLM
+                  </div>
+                  <div className="p-6 text-center text-xl">
+                    Utilizes third-party LLM APIs, such as GPT-4 or Claude, for
+                    language processing needs.
+                  </div>
+                </div>
+                <div className="unique-shadow">
+                  <div className="bg-black text-white  text-3xl font-bold text-center p-5 my-8">
+                    Private LLM
+                  </div>
+                  <div className="p-6 text-center text-xl">
+                    Deploys open-source LLMs within a secure environment, hosted
+                    exclusively on our infrastructure.
+                  </div>
+                </div>
+                <div className="  unique-shadow ">
+                  <div className="bg-black text-white bg-opacity-100 text-3xl font-bold text-center p-5 my-8">
+                    Fine tuned SLM
+                  </div>
+                  <div className="p-6 text-center text-xl">
+                    A custom-trained model, tailored to specific data, hosted
+                    on-premises for secure and dedicated use.
+                  </div>
+                </div>
+              </div>
             </div>
             {/* Section Container */}
           </div>
@@ -760,7 +794,7 @@ function Home() {
         {/*...::: FAQ Section End :::... */}
 
         {/*...::: Testimonial Section Start :::... */}
-       
+
         {/*...::: Testimonial Section Start :::... */}
       </main>
       {/*...::: Footer Start :::... */}

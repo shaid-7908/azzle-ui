@@ -141,6 +141,12 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
               <li className="sub-menu--item">
                 <Link href="/logistics">Logistics</Link>
               </li>
+              <li className="sub-menu--item">
+                <Link href="/real-estate">Real Estate</Link>
+              </li>
+              <li className="sub-menu--item">
+                <Link href="/energy">Energy & Renewables</Link>
+              </li>
             </ul>
           </li>
           <li

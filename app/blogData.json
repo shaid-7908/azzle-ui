@@ -178,8 +178,39 @@
 "image":"/blog-image/blog-22/blog-22-dash.png",
 "description":"Workmate empowers procurement teams to quickly identify alternative materials and make informed decisions without compromising production quality. By harmonizing material descriptions and utilizing AI-driven reconciliation and buyer prioritization, Workmate streamlines material sourcing, saving both time and costs. With Workmate, teams can focus on what matters most—maintaining smooth production flows while optimizing resources."
 },
-
-  {
+{
+  "id":23,
+  "title":"Workmate Connected Construction Command Center",
+  "description":"Workmate Connected Construction Command Center provides a unified view of your construction projects, merging critical aspects like schedules, designs, and budgets into a user-friendly interface. Designed specifically for the construction industry's unique needs, it enables flexible and efficient project management.",
+  "filename":"Ai-connected-construction",
+  "catagory":["real-estate"],
+  "image":"/blog-image/blog-23/blog-23-dash.png"
+},
+{
+  "id":24,
+  "filename":"Procurment-for-construction",
+  "title":"Workmate Procurement for Construction Projects: Three-Way Matching",
+  "description":"Workmate streamlines purchasing workflows, integrating LLMs to effortlessly synthesize extracted information within contracts, recommend suggested suppliers, and ensure that invoices match orders and goods receipts",
+  "catagory":["real-estate"],
+  "image":"/blog-image/blog-24/blog-24-dash.png"
+},
+{
+"id":25,
+"filename":"Dynamic-rig",
+"title":"Workmate for Dynamic Rig Scheduling",
+"description":"Efficient rig scheduling is critical for achieving production and cost targets in the constantly changing oil & gas industry. Workmate powers the Dynamic Rig Scheduling app to bring AI to scheduling and resource management for drilling, completions, and well work. It enables operations teams to effectively create and manage their schedules in the context of their organization and adapt to real-time changes to their environment.",
+"catagory":["energy"],
+"image":"/blog-image/blog-25/blog-25-dash.png"
+},
+{
+"id":26,
+"filename":"Grid-planing",
+"title":"Workmate for Grid Planning and Network Maintenance ",
+"description":"Gain full visibility into asset networks to optimize grid operations with Workmate. Utilities teams are able to leverage a geographic overview of the network, then drill down into single assets for real-time visibility.",
+"image":"/blog-image/blog-26/blog-26-dash.png",
+"catagory":["energy"]
+},
+{
     "id": 169,
     "filename": "Inventory-Management",
     "image": "/blog-image/blog-12/blog-12-hero.svg",

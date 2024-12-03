@@ -2,26 +2,27 @@
 import Header_01 from "@/components/header/Header_01";
 import Footer_01 from "@/components/footer/Footer_01";
 import Link from "next/link";
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Image from "next/image";
 import useAccordion from "@/components/hooks/useAccordion";
 import useTabs from "@/components/hooks/useTabs";
 import data from "../blogData.json";
-import { useEffect, useState } from "react";
-function Product1() {
+
+function Logistics() {
   const [activeIndex, handleAccordion] = useAccordion(0);
 
   const [activeTab, handleTab] = useTabs();
   const [filteredBlogs, setFilteredBlogs] = useState([]);
   useEffect(() => {
     const filteredData = () => {
-      const filtered = data.filter((item) => item.catagory.includes("health"));
+      const filtered = data.filter((item) =>
+        item.catagory.includes("energy")
+      );
       setFilteredBlogs(filtered);
     };
-    filteredData()
+    filteredData();
   }, []);
-  
-  
+
   return (
     <>
       <Header_01 />
@@ -33,12 +34,12 @@ function Product1() {
             {/* Section Container */}
             <div className="global-container">
               <div className="breadcrumb-block">
-                <h1 className="breadcrumb-title">Healthcare </h1>
+                <h1 className="breadcrumb-title">Energy & Renewables</h1>
                 <ul className="breadcrumb-nav">
                   <li>
                     <Link href="/">Home</Link>
                   </li>
-                  <li>Healthcare</li>
+                  <li>Energy & Renewables</li>
                 </ul>
               </div>
             </div>
@@ -46,142 +47,74 @@ function Product1() {
           </div>
           {/* Section Spacer */}
         </section>
-        {/*...::First Hero section::... */}
-
-        {/*....::Financial Hero section::.... */}
-        <section id="Health-hero">
+        {/*...::Breadcrum section::..... */}
+        <section id="logistics-hero">
           <div className="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px]  pb-20  lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24  xxl:pb-[133px] ">
             <div className="global-container ">
               <div className="my-20">
                 <h1 className=" text-5xl text-center">
-                  Make <span className="text-colorOrangyRed">Healthcare</span>{" "}
-                  data analysis self-service
+                  Harnessing AI for a
+                  <span className="text-colorOrangyRed mx-1">Sustainable</span>
+                  Energy Future
                 </h1>
                 <p className="text-center my-4">
-                  Using Large Language Models (LLMs) or Fine tuned Small
-                  Language Models (SLMs),
-                  <br /> hosted either publicly or on-premises.
+                  Workmate powers the energy sector with AI-driven solutions,
+                  optimizing renewable energy production, enhancing efficiency,
+                  and driving smarter, sustainable decisions.
                 </p>
-              </div>
-             
-
-              <div className="mb-10 mt-40">
-                <div className="flex flex-col-reverse md:flex-row">
-                  <div className="flex-1 flex justify-center items-center">
-                    <div>
-                      <h2 className="text-3xl my-2">
-                        Connect to your databases or data warehouses
-                      </h2>
-                      <p className="my-6">
-                        Integrate with your databases and data warehouses
-                        all-in-one place (Postgres, MySQL, Snowflake, BigQuery,
-                        and more).
-                      </p>
-                      <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed md:w-[30%]">
-                        All intigration
-                      </div>
+                <div>
+                  <h1 className="text-center my-8">Use Case</h1>
+                  <div>
+                    {/*Blog section */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+                      {filteredBlogs?.slice(0, 3).map((el, index) => {
+                        return (
+                          <div
+                            key={index}
+                            className="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]"
+                          >
+                            <Link
+                              href={`/blog/${el.filename}`}
+                              className="block overflow-hidden"
+                            >
+                              <Image
+                                src={el.image}
+                                style={{ objectFit: "contain" }}
+                                alt="blog-main-1"
+                                width={856}
+                                height={540}
+                                className="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
+                              />
+                            </Link>
+                            <div className="border border-[#EAEDF0] p-[30px]">
+                              <h5 className="mb-3 mt-7 text-xl tracking-wide hover:text-colorOrangyRed">
+                                <Link href={`/blog/${el.filename}`}>
+                                  {el.title}
+                                </Link>
+                              </h5>
+                              <p className="mb-7 line-clamp-2 last:mb-0">
+                                {el.description}
+                              </p>
+                            </div>
+                          </div>
+                        );
+                      })}
                     </div>
-                  </div>
-                  <div className="flex-1">
-                    <Image
-                      src="https://framerusercontent.com/images/26BDtwtdCeO9MM8n8QanpuYQJPk.png"
-                      height={600}
-                      width={600}
-                      alt="na"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-40">
-                <div className="flex flex-col-reverse md:flex-row">
-                  <div className="flex-1 flex justify-center items-center">
-                    <div>
-                      <h2 className="text-3xl my-4 md:my-1">
-                        Chat with your database, visualize insights, & perform
-                        analysis
-                      </h2>
-                      <p className="my-4 mr-4">
-                        Workmate can write SQL queries and create recommended
-                        charts based on your data questions. It also helps your
-                        drill down on the analysis.
-                      </p>
-                      <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed md:w-[30%]">
-                        Get Started
-                      </div>
+                    {/*Blog section */}
+                    <div className="flex justify-center items-center my-4">
+                      <Link
+                        href="/blog"
+                        className="button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
+                      >
+                        Read More
+                      </Link>
                     </div>
-                  </div>
-                  <div className="flex-1">
-                    <video
-                      src="https://res.cloudinary.com/dycvkezau/video/upload/v1730619989/rec_for_web_x2bsgi.mp4"
-                      autoPlay
-                      loop
-                      muted
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-40">
-                <div className="flex flex-col-reverse md:flex-row">
-                  <div className="flex-1 flex justify-center items-center">
-                    <div>
-                      <h2 className="text-3xl">
-                        Ensure answer accuracy and consistency with built-in
-                        data catalog
-                      </h2>
-                      <p className="my-4 mr-4">
-                        An automated semantic layer that ensures Brewit answers
-                        with correct business logic. Easily manage your data
-                        catalog & data dictionary.
-                      </p>
-                      <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed md:w-[30%]">
-                        Get Started
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <Image
-                      src="/assets/img_1.gif"
-                      alt="na"
-                      height={600}
-                      width={600}
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-40">
-                <div className="flex flex-col-reverse md:flex-row">
-                  <div className="flex-1 flex justify-center items-center">
-                    <div>
-                      <h2 className="text-3xl">
-                        Building a beautiful report is as easy as writing a doc
-                      </h2>
-                      <p className="my-4 mr-4">
-                        Data without story is useless. Our Notion-style notebook
-                        editor allows you to create reports & dashboards easily,
-                        turning raw data into actionable insights.
-                      </p>
-                      <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed md:w-[30%]">
-                        Get Started
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <Image
-                      src="/assets/img_3.gif"
-                      alt="na"
-                      height={600}
-                      width={600}
-                    />
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
         {/*...::: FAQ Section Start :::... */}
         <section className="faq-section">
           {/* Section Spacer */}
@@ -321,66 +254,10 @@ function Product1() {
           </div>
           {/* Section Spacer */}
         </section>
-
-        <section>
-          {/* Section Spacer */}
-          <div className="pb-20 xl:pb-[150px]">
-            {/* Section Container */}
-            <div className="global-container">
-              {/*Blog section */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-                {filteredBlogs?.slice(0, 3).map((el, index) => {
-                  return (
-                    <div
-                      key={index}
-                      className="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]"
-                    >
-                      <Link
-                        href={`/blog/${el.filename}`}
-                        className="block overflow-hidden"
-                      >
-                        <Image
-                          src={el.image}
-                          style={{ objectFit: "contain" }}
-                          alt="blog-main-1"
-                          width={856}
-                          height={540}
-                          className="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
-                        />
-                      </Link>
-                      <div className="border border-[#EAEDF0] p-[30px]">
-                        <h5 className="mb-3 mt-7 text-xl tracking-wide hover:text-colorOrangyRed">
-                          <Link href={`/blog/${el.filename}`}>{el.title}</Link>
-                        </h5>
-                        <p className="mb-7 line-clamp-2 last:mb-0">
-                          {el.description}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-              {/*Blog section */}
-              <div className="flex justify-center items-center my-4">
-                <Link
-                  href="/blog"
-                  className="button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
-                >
-                  Read More
-                </Link>
-              </div>
-            </div>
-            {/* Section Container */}
-          </div>
-          {/* Section Spacer */}
-        </section>
-
-        {/*...::: FAQ Section End :::... */}
-        {/*...::: FAQ Section End :::... */}
       </main>
       <Footer_01 />
     </>
   );
 }
 
-export default Product1;
+export default Logistics;
