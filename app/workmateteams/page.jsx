@@ -6,6 +6,7 @@ import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import Link from "next/link";
 import Footer_01 from "@/components/footer/Footer_01";
+import CompanySlider from "@/components/ui/CompanySlider";
 
 function WorkmateTeams() {
   const [activeIndex, handleAccordion] = useAccordion(0);
@@ -20,12 +21,12 @@ function WorkmateTeams() {
             {/* Section Container */}
             <div className="global-container">
               <div className="breadcrumb-block">
-                <h1 className="breadcrumb-title">Work Teams</h1>
+                <h1 className="breadcrumb-title">WorkTeams</h1>
                 <ul className="breadcrumb-nav">
                   <li>
                     <Link href="/">Home</Link>
                   </li>
-                  <li>Work Teams</li>
+                  <li>WorkTeams</li>
                 </ul>
               </div>
             </div>
@@ -45,7 +46,7 @@ function WorkmateTeams() {
                   data-jos_animation="fade-left"
                 >
                   <Image
-                    src="/assets/workmate-teams/h3.png"
+                    src="/assets/workmate-teams/h5.png"
                     alt="content-image-2"
                     width="526"
                     height="450"
@@ -83,7 +84,7 @@ function WorkmateTeams() {
                   data-jos_animation="fade-left"
                 >
                   <Image
-                    src="/assets/workmate-teams/h2.png"
+                    src="/assets/workmate-teams/h6.png"
                     alt="content-image-2"
                     width="526"
                     height="450"
@@ -344,6 +345,7 @@ function WorkmateTeams() {
           </div>
           {/* Section Spacer */}
         </section>
+        <CompanySlider />
         {/*...::: FAQ Section Start :::... */}
         <section className="faq-section">
           {/* Section Spacer */}

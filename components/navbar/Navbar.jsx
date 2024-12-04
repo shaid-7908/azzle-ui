@@ -171,7 +171,7 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                 <Link href="/workmate">Workmate</Link>
               </li>
               <li className="sub-menu--item">
-                <Link href="/workmateteams">Work Teams</Link>
+                <Link href="/workmateteams">WorkTeams</Link>
               </li>
             </ul>
           </li>

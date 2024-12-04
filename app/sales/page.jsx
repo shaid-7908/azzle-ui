@@ -60,8 +60,9 @@ function Sales(){
                       with Workmate AI-Powered Solutions.
                     </h1>
                     <p className="text-center my-4">
-                      Optimize Campaigns, Streamline Lead Management, and
-                      Enhance Customer Service with AI-Powered Insights
+                      Optimize campaigns, streamline lead management, enhance
+                      customer service, and drive business growth with
+                      AI-powered insights tailored to your unique needs.
                     </p>
                     <div>
                       <h1 className="text-center my-8">Use Case</h1>

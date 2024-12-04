@@ -58,8 +58,10 @@ function Banking() {
                   Your Business Processes.
                 </h1>
                 <p className="text-center my-4">
-                  Explore Our Cutting-Edge Solutions for Entity Resolution,
-                  Compliance, and Contract Optimization
+                  Explore our cutting-edge solutions for entity resolution,
+                  regulatory compliance, contract optimization, and enhanced
+                  operational efficiency to transform your business processes
+                  and achieve measurable outcomes.
                 </p>
               </div>
               <div>

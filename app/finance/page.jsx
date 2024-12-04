@@ -39,7 +39,7 @@ function Finance(){
                     <li>
                       <Link href="/">Home</Link>
                     </li>
-                    <li>Workmate</li>
+                    <li>Finance</li>
                   </ul>
                 </div>
               </div>
@@ -58,126 +58,12 @@ function Finance(){
                     data analysis self-service
                   </h1>
                   <p className="text-center my-4">
-                    Using Large Language Models (LLMs) or Fine tuned Small
-                    Language Models (SLMs),
-                    <br /> hosted either publicly or on-premises.
+                    Transform financial data analysis using Large Language
+                    Models (LLMs) or fine-tuned Small Language Models (SLMs),
+                    <br />
+                    hosted securely on-premises or publicly to drive accuracy,
+                    efficiency, and insightful decision-making.
                   </p>
-                </div>
-
-                <div className="my-10">
-                  <div className="flex">
-                    <div className="flex-1 flex justify-center items-center">
-                      <div>
-                        <h2 className="text-3xl my-2">
-                          Connect to your databases or data warehouses
-                        </h2>
-                        <p className="my-6">
-                          Integrate with your databases and data warehouses
-                          all-in-one place (Postgres, MySQL, Snowflake,
-                          BigQuery, and more).
-                        </p>
-                        <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed w-[30%]">
-                          All intigration
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <Image
-                        src="https://framerusercontent.com/images/26BDtwtdCeO9MM8n8QanpuYQJPk.png"
-                        height={600}
-                        width={600}
-                        alt="na"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-40">
-                  <div className="flex">
-                    <div className="flex-1 flex justify-center items-center">
-                      <div>
-                        <h2 className="text-3xl">
-                          Chat with your database, visualize insights, & perform
-                          analysis
-                        </h2>
-                        <p className="my-4 mr-4">
-                          Workmate can write SQL queries and create recommended
-                          charts based on your data questions. It also helps
-                          your drill down on the analysis.
-                        </p>
-                        <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed w-[30%]">
-                          Get Started
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <Image
-                        src="https://framerusercontent.com/images/FSExARtEM1GuC9QzUxCWsCjviQ.gif"
-                        alt="na"
-                        height={600}
-                        width={600}
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-40">
-                  <div className="flex">
-                    <div className="flex-1 flex justify-center items-center">
-                      <div>
-                        <h2 className="text-3xl">
-                          Ensure answer accuracy and consistency with built-in
-                          data catalog
-                        </h2>
-                        <p className="my-4 mr-4">
-                          An automated semantic layer that ensures Brewit
-                          answers with correct business logic. Easily manage
-                          your data catalog & data dictionary.
-                        </p>
-                        <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed w-[30%]">
-                          Get Started
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <Image
-                        src="https://framerusercontent.com/images/C8m4PfsS3ajGq554AkEXBXfzYZE.gif"
-                        alt="na"
-                        height={600}
-                        width={600}
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-40">
-                  <div className="flex">
-                    <div className="flex-1 flex justify-center items-center">
-                      <div>
-                        <h2 className="text-3xl">
-                          Building a beautiful report is as easy as writing a
-                          doc
-                        </h2>
-                        <p className="my-4 mr-4">
-                          Data without story is useless. Our Notion-style
-                          notebook editor allows you to create reports &
-                          dashboards easily, turning raw data into actionable
-                          insights.
-                        </p>
-                        <div className="bg-black rounded-lg text-center p-2 my-2 font-semibold text-colorOrangyRed w-[30%]">
-                          Get Started
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex-1">
-                      <Image
-                        src="https://framerusercontent.com/images/WeF78UARbO5VD4LQOz9cbsnaQUQ.gif"
-                        alt="na"
-                        height={600}
-                        width={600}
-                      />
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -188,6 +74,7 @@ function Finance(){
               {/* Section Container */}
               <div className="global-container">
                 {/*Blog section */}
+                <h1 className="text-center my-8">Use Case</h1>
                 <div className="grid grid-cols-3 gap-2">
                   {filteredBlogs?.slice(0, 3).map((el, index) => {
                     return (

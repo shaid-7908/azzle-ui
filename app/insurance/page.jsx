@@ -55,8 +55,8 @@ function Insurance() {
                   Solutions.
                 </h1>
                 <p className="text-center my-4">
-                  Effortless claim processing, accurate underwriting, and
-                  streamlined workflows—all with Workmate.
+                  Effortless Claim Processing, Accurate Underwriting, and
+                  Streamlined Workflows—All Powered by Workmate.
                 </p>
               </div>
               <div>
