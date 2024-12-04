@@ -92,7 +92,7 @@ function Pricing() {
                           Free
                         </h3>
                         <span className="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
-                          1 member
+                          Up to 1 Gb
                         </span>
                         <div className="my-5 h-[1px] w-full bg-[#DBD6CF]" />
                         <h4 className="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
@@ -184,11 +184,11 @@ function Pricing() {
                           Beginner
                         </h3>
                         <span className="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
-                          Up to 10 members
+                          Up to 5 Gb
                         </span>
                         <div className="my-5 h-[1px] w-full bg-[#DBD6CF]" />
                         <h4 className="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
-                          $25
+                          $199
                           <span className="text-lg font-semibold">
                             /Per month
                           </span>
@@ -295,11 +295,11 @@ function Pricing() {
                           Starter
                         </h3>
                         <span className="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
-                          Up to 50 members
+                          Up to 10 Gb
                         </span>
                         <div className="my-5 h-[1px] w-full bg-[#DBD6CF]" />
                         <h4 className="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
-                          $89
+                          $299
                           <span className="text-lg font-semibold">
                             /Per month
                           </span>
@@ -425,11 +425,11 @@ function Pricing() {
                           Pro
                         </h3>
                         <span className="text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
-                          Up to 100 members
+                          Up to 50 Gb
                         </span>
                         <div className="my-5 h-[1px] w-full bg-[#DBD6CF]" />
                         <h4 className="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
-                          $199
+                          $499
                           <span className="text-lg font-semibold">
                             /Per month
                           </span>
@@ -564,58 +564,7 @@ function Pricing() {
                         </Link>
                       </li>
                       {/* Price Item */}
-                      <li
-                        className="jos group flex flex-col rounded-[10px] bg-colorLinenRuffle p-[30px] transition-all duration-300 ease-linear hover:bg-black"
-                        data-jos_animation="flip"
-                        data-jos_delay={0}
-                      >
-                        <h3 className="flex flex-wrap font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">
-                          Workmate Plan
-                        </h3>
-
-                        <div className="my-5 h-[1px] w-full bg-[#DBD6CF]" />
-                        <h4 className="mb-4 flex flex-col font-dmSans text-5xl font-bold leading-none text-black transition-all duration-300 ease-linear group-hover:text-white md:text-6xl lg:text-7xl xl:text-[80px]">
-                          <span className="text-lg font-semibold">
-                            Starting at
-                          </span>
-                          $800
-                          <span className="text-lg font-semibold">
-                            /Per month
-                          </span>
-                        </h4>
-                        <p className="mb-6 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white">
-                          $800 / Month for every 10GB of data processed
-                        </p>
-                        {/* Price Info List */}
-                        <ul className="mb-10 flex flex-col gap-y-3">
-                          <li className="flex items-center gap-x-3 font-bold group-hover:text-white">
-                            <div className="relative h-[24px] w-[24px]">
-                              <Image
-                                src="/assets/img_placeholder/th-1/icon-black-badge-check.svg"
-                                alt="icon-black-badge-check"
-                                width={24}
-                                height={24}
-                                className="h-full w-full object-cover"
-                              />
-                              <Image
-                                src="/assets/img_placeholder/th-1/icon-orange-badge-check.svg"
-                                alt="icon-black-badge-check"
-                                width={24}
-                                height={24}
-                                className="absolute inset-0 left-0 top-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
-                              />
-                            </div>
-                            Includes all Workmate features.
-                          </li>
-                        </ul>
-                        {/* Price Info List */}
-                        <Link
-                          href="/pricing"
-                          className="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-black group-hover:border-colorOrangyRed group-hover:text-white"
-                        >
-                          Choose the plan
-                        </Link>
-                      </li>
+                     
                       {/*Price items */}
                     </ul>
                   )}
