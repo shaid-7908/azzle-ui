@@ -23,6 +23,20 @@ module.exports = {
       // => @media (min-width: 1400px) { ... }
     },
     extend: {
+      backgroundImage: {
+        "gradient-text":
+          "linear-gradient(90deg, #ff7eb3, #ff758c, #f9a8d4, #ff7eb3)",
+      },
+      animation: {
+        "gradient-text": "gradientBG 3s ease infinite",
+      },
+      keyframes: {
+        gradientBG: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
+        },
+      },
       fontFamily: {
         // Add your custom fonts
         dmSans: ["var(--font-DMSans)", "sans-serif"],

@@ -7,9 +7,19 @@ import Image from "next/image";
 import Link from "next/link";
 import Footer_01 from "@/components/footer/Footer_01";
 import CompanySlider from "@/components/ui/CompanySlider";
+import data from "../blogData.json";
 
 function WorkmateTeams() {
   const [activeIndex, handleAccordion] = useAccordion(0);
+   const [filteredBlogs, setFilteredBlogs] = useState([]);
+   useEffect(() => {
+     const filteredData = () => {
+       const filtered = data.filter((item,index) => index < 6);
+       setFilteredBlogs(filtered);
+     };
+     filteredData();
+   }, []);
+    
   return (
     <>
       <Header_01 />
@@ -347,6 +357,60 @@ function WorkmateTeams() {
         </section>
         <CompanySlider />
         {/*...::: FAQ Section Start :::... */}
+
+        <section id="workmate-teams">
+          <div className="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px]  pb-20  lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-24  xxl:pb-[133px] ">
+            <div className="global-container ">
+              <h1 className="text-center my-8">Use Case</h1>
+              <div>
+                {/*Blog section */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+                  {filteredBlogs?.map((el, index) => {
+                    return (
+                      <div
+                        key={index}
+                        className="jos group overflow-hidden rounded-[10px] bg-white shadow-[0_4px_80px_rgba(0,0,0,0.08)]"
+                      >
+                        <Link
+                          href={`/blog/${el.filename}`}
+                          className="block overflow-hidden"
+                        >
+                          <Image
+                            src={el.image}
+                            style={{ objectFit: "contain" }}
+                            alt="blog-main-1"
+                            width={856}
+                            height={540}
+                            className="h-auto w-full scale-100 object-cover transition-all duration-300 group-hover:scale-105"
+                          />
+                        </Link>
+                        <div className="border border-[#EAEDF0] p-[30px]">
+                          <h5 className="mb-3 mt-7 text-xl tracking-wide hover:text-colorOrangyRed">
+                            <Link href={`/blog/${el.filename}`}>
+                              {el.title}
+                            </Link>
+                          </h5>
+                          <p className="mb-7 line-clamp-2 last:mb-0">
+                            {el.description}
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+                {/*Blog section */}
+                <div className="flex justify-center items-center my-4">
+                  <Link
+                    href="/blog"
+                    className="button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
+                  >
+                    Read More
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="faq-section">
           {/* Section Spacer */}
           <div className="pb-20 xl:pb-[150px]">
