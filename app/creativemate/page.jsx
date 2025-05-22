@@ -269,7 +269,7 @@ function CreativeMate(){
                   <span className="text-blue-700"> Worldwide</span>
                 </h2>
                 <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-                  Join thousands of successful creators who've transformed their
+                  Join thousands of successful creators who&apos;ve transformed their
                   Instagram presence with our platform.
                 </p>
               </div>
