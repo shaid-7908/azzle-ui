@@ -651,7 +651,44 @@ function Home() {
           </div>
         </section>
         {/*...::: Funfact Section End :::... */}
+        <section>
+          <div className="pb-20 xl:pb-[150px]">
+            {/* Section Container */}
+            <div className="global-container">
+              <div className="flex w-full p-4">
+                {/* Left side: Grid of reels */}
+                <div className="flex-1 grid grid-cols-3 grid-rows-2 gap-4 pr-4">
+                  {[...Array(6)].map((_, index) => (
+                    <video
+                      key={index}
+                      src={`/reels/reel${index + 1}.mp4`} // Replace with your reel video paths
+                      autoPlay
+                      muted
+                      loop
+                      className="w-full h-full object-cover rounded-lg shadow-md"
+                    />
+                  ))}
+                </div>
 
+                {/* Right side: Text content */}
+                <div className="flex-1 flex flex-col justify-start pl-4">
+                  <h2 className="text-7xl font-bold mb-4">
+                    AI-Powered Reels That Outperform Your Competitors
+                  </h2>
+                  <p className="text-lg text-gray-600">
+                    Stay ahead with smart, data-driven content. Our AI analyzes
+                    top-performing reels from your competitors and instantly
+                    generates captivating short videos tailored to your brand.
+                    No guesswork, just growth.
+                  </p>
+                  <Link href='#' className="button w-[30%] my-2 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white">
+                    Learn More
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         {/*...::: FAQ Section Start :::... */}
         <section className="faq-section">
           {/* Section Spacer */}
