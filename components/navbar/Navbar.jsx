@@ -173,6 +173,9 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
               <li className="sub-menu--item">
                 <Link href="/workmateteams">WorkTeams</Link>
               </li>
+              <li className="sub-menu--item">
+                <Link href="/creativemate">Creativemate</Link>
+              </li>
             </ul>
           </li>
           <li
@@ -219,7 +222,6 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                 </ul>
               </li>
 
-             
               <li className="sub-menu--item">
                 <Link
                   href="/pricing"
@@ -229,7 +231,6 @@ const Navbar = ({ mobileMenu, setMobileMenu, color }) => {
                   Pricing
                 </Link>
               </li>
-              
             </ul>
           </li>
           <li className="nav-item">

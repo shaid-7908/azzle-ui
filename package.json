@@ -13,6 +13,7 @@
     "fslightbox-react": "^1.7.6",
     "gray-matter": "^4.0.3",
     "jos-animation": "^0.9.2",
+    "lucide-react": "^0.511.0",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",

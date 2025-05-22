@@ -83,7 +83,112 @@ function Home() {
           </div>
         </section>
         {/*...::: Hero Section End :::... */}
-
+        {/* ...:::Product Display Starts here:::...*/}
+        <section id="product-display">
+          {/* Section Spacer */}
+          <div className="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
+            {/* Section Container */}
+            <div className="global-container">
+              {/* Section Content Block */}
+              <div className="jos mb-10 lg:mb-16 xl:mb-20">
+                <div className="md:max-w-sm lg:max-w-xl xl:max-w-[746px]">
+                  <h2>Our Products</h2>
+                </div>
+              </div>
+              {/* Section Content Block */}
+              <div className="flex justify-around">
+                {/*WorkMate section start */}
+                <div className="max-w-sm rounded-2xl flex flex-col overflow-hidden shadow-lg bg-white  p-4">
+                  <Image
+                    className="w-full h-48 object-cover rounded-lg"
+                    src="/blog-image/blog-18/blog-18-dash.png"
+                    alt="Card Image"
+                    width={300}
+                    height={300}
+                  />
+                  <div className="mt-4 flex flex-col flex-grow">
+                    <h2 className="text-4xl">WorkMate</h2>
+                    <p className=" mt-2">
+                      Workmate is a privacy-first, on-premise conversational
+                      analytics platform powered by a domain-specific small
+                      language model. It enables secure data integration,
+                      dynamic insights, visualizations, and team collaboration
+                      to unlock enterprise data value.
+                    </p>
+                    <div className="mt-auto">
+                      <Link
+                        href="#"
+                        className="button w-[100%] my-2 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
+                      >
+                        Learn More
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                {/*WorkMate section end */}
+                {/* WorkTeam section start */}
+                <div className="max-w-sm rounded-2xl flex flex-col  overflow-hidden shadow-lg bg-white  p-4">
+                  <Image
+                    className="w-full h-48 object-cover rounded-lg"
+                    src="/assets/workmate-teams/h5.png"
+                    alt="Card Image"
+                    width={300}
+                    height={300}
+                  />
+                  <div className="mt-4 flex flex-col flex-grow ">
+                    <h2 className="text-4xl">WorkTeam</h2>
+                    <p className="text-lg mt-2">
+                      Harness intelligent automation with AI insights, data
+                      analytics, and smart workflows tailored to your industry.
+                      Achieve greater efficiency, scalability, and
+                      precision—designed for niche needs.
+                    </p>
+                    <div className="mt-auto">
+                      <Link
+                        href="#"
+                        className="button w-[100%] mt-auto my-2 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
+                      >
+                        Learn More
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                {/*WorkTeam section End */}
+                {/*CreativeMate section start */}
+                <div className="max-w-sm flex flex-col  rounded-2xl overflow-hidden shadow-lg bg-white  p-4">
+                  <Image
+                    className="w-full h-48 object-cover rounded-lg"
+                    src="/assets/matric.webp"
+                    alt="Card Image"
+                    width={300}
+                    height={300}
+                  />
+                  <div className="mt-4 flex flex-col flex-grow">
+                    <h2 className="text-4xl">CreativeMate</h2>
+                    <p className=" mt-2">
+                      CreativeMate uses AI to generate high-performing Instagram
+                      Reels based on competitor analysis. It also creates
+                      stunning product photography and compelling content to
+                      elevate your brand’s social media presence.
+                    </p>
+                    <div className="mt-auto">
+                      <Link
+                        href="#"
+                        className="button w-[100%] my-2 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
+                      >
+                        Learn More
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                {/*CreativeMate section End */}
+              </div>
+            </div>
+            {/* Section Container */}
+          </div>
+          {/* Section Spacer */}
+        </section>
+        {/* ...:::Product Display end here:::...*/}
         {/*...::: Service Section Start :::... */}
         <section id="section-service">
           {/* Section Spacer */}
@@ -651,7 +756,7 @@ function Home() {
           </div>
         </section>
         {/*...::: Funfact Section End :::... */}
-        <section>
+        <section id="reel-video-section">
           <div className="pb-20 xl:pb-[150px]">
             {/* Section Container */}
             <div className="global-container">
@@ -681,7 +786,10 @@ function Home() {
                     generates captivating short videos tailored to your brand.
                     No guesswork, just growth.
                   </p>
-                  <Link href='#' className="button w-[30%] my-2 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white">
+                  <Link
+                    href="#"
+                    className="button w-[30%] my-2 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-colorOrangyRed hover:border-colorOrangyRed hover:text-white"
+                  >
                     Learn More
                   </Link>
                 </div>
